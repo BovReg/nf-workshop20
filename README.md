@@ -24,8 +24,9 @@ link to register.
 
 ## Organizers
 
-![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png | width=100)
-![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg | width=100)
+![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png)
+
+![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg)
 
 ## Funding
 
