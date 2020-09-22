@@ -1,4 +1,4 @@
-# nf-workshop20
+# Reproducible genomics workflows using Nextflow and nf-core
 
 Repository for the BovReg nextflow workshop and hackathon organized by the CRG on 17-20 November 2020.
 
