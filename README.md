@@ -4,7 +4,14 @@ Repository for the BovReg nextflow workshop and hackathon organized by the CRG o
 
 ## Programme
 
-The event programme can be found [here](schedule.md).
+The preliminary event schedule can be found [here](schedule.md). 
+
+---
+**NOTE**
+
+The current schedule can be subjected to changes although the days and times will be maintained.
+
+---
 
 ## Format
 
