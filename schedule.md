@@ -1,5 +1,7 @@
 ## Nextflow workshop 2018 Programme
 
+**Note that this is just a tentative schedule and might be still modified** 
+
 #### Tuesday, 17 November
 
 |<img width=150/>|                            |
@@ -27,8 +29,6 @@
 
 |<img width=150/>|                            |
 |---------------|---------------------------|
-|<img width=150/>|                            |
-|---------------|---------------------------|
 | 9.00 - 11.00 | Nextflow tutorial             |              |
 | 11.00 - 11:15 | Coffee break |
 | 11.15 - 12.15| Phil Ewels: Introduction to nf-core |
@@ -50,4 +50,4 @@
 
 ## Registration 
 
-For details and registration check [this link](http://www.crg.eu/en/event/).
+For details and registration check [this link](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core/).
