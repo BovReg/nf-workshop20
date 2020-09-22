@@ -22,6 +22,18 @@ Online workshop.
 Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
 link to register.
 
+## Organizers
+
+![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png | width=100)
+![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg | width=100)
+
+## Funding
+
+BovReg project has received funding from the European Union’s Horizon 2020 research and innovation program under 
+Grant Agreement ID. 815668.
+
+
+
 
 
 
