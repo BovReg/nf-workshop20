@@ -10,6 +10,10 @@ The event programme can be found [here](schedule.md).
 
 Online workshop.
 
+## Registration
+
+Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
+link to register.
 
 
 
