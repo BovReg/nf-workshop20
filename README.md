@@ -16,10 +16,13 @@ Please follow [this](https://apps.crg.es/content/internet/events/webforms/reprod
 link to register.
 
 ## Organizers
+<br/>
+<p float="left">
+  <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png" width="100" />
+  <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg" width="100" /> 
+</p>
 
-|<img width=200/>|                            |
-|---------------|---------------------------|
-![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png)  |  ![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg)
+<!--- ![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png) ![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg) ---> 
 
 
 ## Funding
