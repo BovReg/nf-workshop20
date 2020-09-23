@@ -1,6 +1,6 @@
 ## Nextflow workshop 2018 Programme
 
-**Note that this is just a tentative schedule and might be still modified** 
+**Note that this is a tentative schedule and such, can be subjected to changes** 
 
 #### Tuesday, 17 November
 

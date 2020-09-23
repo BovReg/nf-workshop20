@@ -6,13 +6,6 @@ Repository for the BovReg nextflow workshop and hackathon organized by the CRG o
 
 The preliminary event schedule can be found [here](schedule.md). 
 
----
-**NOTE**
-
-The current schedule can be subjected to changes although the days and times will be maintained.
-
----
-
 ## Format
 
 Online workshop.
@@ -24,9 +17,10 @@ link to register.
 
 ## Organizers
 
-![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png)
+|<img width=200/>|                            |
+|---------------|---------------------------|
+![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png)  |  ![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg)
 
-![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg)
 
 ## Funding
 
