@@ -18,9 +18,11 @@ link to register.
 ## Organizers
 <br/>
 <p float="left">
-  <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png" width="200" />
-  &nbsp
-  <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg" width="200" /> 
+    <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_courses_logo.jpg" width="200" /> 
+    &nbsp
+    <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png" width="200" />
+    &nbsp
+    <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg" width="200" />
 </p>
 
 <!--- ![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png) ![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg) ---> 
