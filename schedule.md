@@ -1,4 +1,4 @@
-## Nextflow workshop 2018 Programme
+## Reproducible genomics workflows using Nextflow and nf-core
 
 **Note that this is a tentative schedule and such, can be subjected to changes** 
 

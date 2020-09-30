@@ -10,6 +10,22 @@ The preliminary event schedule can be found [here](schedule.md).
 
 Online workshop.
 
+## Confirmed speakers
+
+* Paolo di Tommaso - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/),
+Barcelona, Spain.
+
+* Evan Floden - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
+
+* Phil Ewels - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
+Sweden.
+
+* Harshil Patel - nf-core core team, Senior Bioinformatician of  the Bioinformatics and Biostatistics Facility at the
+[Francis Crick Institute](https://www.crick.ac.uk/), UK.
+ 
+* Luca Cozzuto - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
+[Centre for Genomic Regulation](https://www.crg.eu/), Spain. 
+ 
 ## Registration
 
 Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
