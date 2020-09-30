@@ -1,6 +1,6 @@
 # Reproducible genomics workflows using Nextflow and nf-core
 
-Repository for the BovReg nextflow workshop and hackathon organized by the CRG on 17-20 November 2020.
+Repository for the BovReg Nextflow workshop and hackathon organized by the CRG on 17-20 November 2020.
 
 ## Programme
 
@@ -26,6 +26,11 @@ Sweden.
 * Luca Cozzuto - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
 [Centre for Genomic Regulation](https://www.crg.eu/), Spain. 
  
+## Contributed talks selected from participants abstracts
+
+Please send your abstract explaining which are the bioinformatics analyses for which you think that this workshop 
+could be relevant. This will give us the opportunity to discuss the possibilities for your own applications. 
+
 ## Registration
 
 Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
