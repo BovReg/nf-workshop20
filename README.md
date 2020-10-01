@@ -29,12 +29,13 @@ Sweden.
 ## Contributed talks selected from participants abstracts
 
 Please send your abstract explaining which are the bioinformatics analyses for which you think that this workshop 
-could be relevant. This will give us the opportunity to discuss the possibilities for your own applications. 
+could be relevant. Even if you still have no results, this will give us the opportunity to discuss the possibilities 
+for your own applications and put in contact participants with similar interests.
 
 ## Registration
 
 Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
-link to register.
+link to register. Registration deadline is the **25th of October**.
 
 ## Organizers
 <br/>
