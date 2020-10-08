@@ -51,7 +51,7 @@ link to register. Registration deadline is the **25th of October**.
 
 ## Poster
 
-![Annoucement pre-workshop](img/nf-bovreg-workshop20-poster.pdf)
+![Workshop bovreg nextflow poster](img/nf-bovreg-workshop20-poster.jpg)
 
 ## Funding
 
