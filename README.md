@@ -37,6 +37,11 @@ for your own applications and put in contact participants with similar interests
 Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
 link to register. Registration deadline is the **25th of October**.
 
+## Poster
+
+![Workshop bovreg nextflow poster](img/nf-bovreg-workshop20-poster.jpg)
+
+<!---
 ## Organizers
 <br/>
 <p float="left">
@@ -46,12 +51,10 @@ link to register. Registration deadline is the **25th of October**.
     &nbsp
     <img src="https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg" width="200" />
 </p>
+---> 
 
 <!--- ![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png) ![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg) ---> 
 
-## Poster
-
-![Workshop bovreg nextflow poster](img/nf-bovreg-workshop20-poster.jpg)
 
 ## Funding
 
