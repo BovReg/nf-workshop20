@@ -49,6 +49,9 @@ link to register. Registration deadline is the **25th of October**.
 
 <!--- ![CRG Logo](https://github.com/BovReg/nf-workshop20/blob/master/logos/crg_logo.png) ![BovReg Log](https://github.com/BovReg/nf-workshop20/blob/master/logos/BovReg_logo.jpg) ---> 
 
+## Poster
+
+![Annoucement pre-workshop](img/nf-bovreg-workshop20-poster.pdf)
 
 ## Funding
 
