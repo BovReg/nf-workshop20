@@ -1,0 +1,47 @@
+= Reproducible genomics workflows using Nextflow and nf-core image:BovReg_logo.jpg[Logo,150,50,float="right", role="titlelogo"]
+:docinfo: private
+:year: 2020
+:event: Reproducible genomics workflows using Nextflow and nf-core
+:hide-uri-scheme:
+:nofooter:
+:icons: font
+:toclevels: 3
+:imagesdir: ./assets/
+ifeval::["{backend}" == "html5"]
+:stylesdir: ./css
+:stylesheet: crg.css
+:linkcss:
+:source-highlighter: highlight.js
+:highlightjs-theme: github
+:toc: left
+:linkattrs:
+endif::[]
+ifeval::["{backend}" == "pdf"]
+:imagesdir: ./docs/assets/
+endif::[]
+ifdef::draft[]
+
+image::draft.png[DRAFT,150,150,float="right",align="center"]
+include::todo.adoc[leveloffset=+1]
+endif::draft[]
+
+This is the documentation for the Nextflow online tutorial that will take place on the framework of the '{event}' workshop organized by BovReg and the CRG.
+
+The aim of this guide is to cover a vast part of Nextflow features ranging from basic to advanced language aspects.
+
+
+:sectnums:
+
+:leveloffset: +1
+
+include::intro.adoc[]
+
+// include::datasets.adoc[]
+
+// include::workflow.adoc[]
+
+// include::setup.adoc[]
+
+// include::implementation.adoc[]
+
+:leveloffset: -1
