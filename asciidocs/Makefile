@@ -58,7 +58,7 @@ $(GEMS)/bin/bundle:
 
 pages: html
 	@echo == Updating github pages
-	@git ci -m "Update docs" ./docs
+	@git ci -m "Update docs" ../docs
 	@git push
 
 clean:
