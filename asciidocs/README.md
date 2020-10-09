@@ -1,7 +1,5 @@
 # Reproducible genomics workflows using Nextflow and nf-core
 
-## Project 2: Variant Calling pipeline for RNA data
-
 This repository contains the source files for the tutorial.
 
 To generate the html documentation do:
