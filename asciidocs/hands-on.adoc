@@ -36,6 +36,10 @@ The aim of this guide is to cover a vast part of Nextflow features ranging from 
 
 include::intro.adoc[]
 
+include::test.adoc[]
+
+// include::setup.adoc[]
+
 // include::datasets.adoc[]
 
 // include::workflow.adoc[]
