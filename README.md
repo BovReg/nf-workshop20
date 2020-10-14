@@ -1,10 +1,10 @@
 # Reproducible genomics workflows using Nextflow and nf-core
 
-Repository for the BovReg Nextflow workshop and hackathon organized by the CRG on 17-20 November 2020.
+Repository for the BovReg Nextflow workshop organized by the CRG on 17-20 November 2020.
 
 ## Programme
 
-The preliminary event schedule can be found [here](schedule.md). 
+The workshop will include a Nextflow training and hackathon, Keynote speakers, and contributed talks selected from participants abstracts. The preliminary event schedule can be found [here](schedule.md).
 
 ## Format
 
@@ -36,6 +36,8 @@ for your own applications and put in contact participants with similar interests
 
 Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
 link to register. Registration deadline is the **25th of October**.
+
+**Note:** *Nextflow training places will be limited to a maximum of 30 attendees.*
 
 ## Poster
 
