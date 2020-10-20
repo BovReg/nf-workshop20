@@ -1,6 +1,8 @@
 ## Reproducible genomics workflows using Nextflow and nf-core
 
-**Note that this is a tentative schedule and such, can be subjected to changes** 
+**Note that this is a tentative schedule and such, can be subjected to changes.** 
+
+All times are indicated in CET (Central European Time, UTC+1). [This time-zone converter](https://savvytime.com/converter/cet) tool may be useful should you are in a different time zone.
 
 #### Tuesday, 17 November
 
