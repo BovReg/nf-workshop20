@@ -4,7 +4,7 @@ Repository for the BovReg Nextflow workshop organized by the CRG on 17-20 Novemb
 
 ## Programme
 
-The workshop will include a Nextflow training and hackathon, Keynote speakers, and contributed talks selected from participants abstracts. The preliminary event schedule can be found [here](schedule.md).
+The workshop will include a Nextflow training and hackathon, Keynote speakers, and contributed talks selected from participants abstracts. The preliminary event schedule can be found [here](https://sites.google.com/view/reproduciblegenomicsworkflowsu/home).
 
 ## Format
 
