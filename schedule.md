@@ -10,9 +10,9 @@ All times are indicated in CET (Central European Time, UTC+1). [This time-zone c
 |-------------- |----------------------------------------|
 |  9.30 - 9.45  | Welcome                                |
 |  9.45 - 10.30 | Evan Floden: Introduction to Nextflow  |
-| 10.30 - 11.20 | Nextflow tutorial                      |
+| 10.30 - 11.20 | Nextflow training                      |
 | 11.20 - 11.30 | Break                                  |
-| 11.30 - 12:30 | Nextflow tutorial                      |
+| 11.30 - 12:30 | Nextflow training                      |
 | 12.30 - 14.00 | Lunch                                  |
 | 14.00 - 14:30 | Hackathon introduction                 |
 | 14.30 - 17.30 | Hackathon                              |
@@ -37,7 +37,7 @@ All times are indicated in CET (Central European Time, UTC+1). [This time-zone c
 | 11.30 - 12.30 | Harshil Patel: Featured nf-core pipelines  |
 | 12.30 - 13.00 | 3 flash talks by selected participants  |
 | 13.00 - 14.30 | Lunch  |
-| 14.30 - 15.30 | nf-core tutorial  |
+| 14.30 - 15.30 | nf-core training  |
 | 15.30 - 17.30 | Hackathon  |
 
 #### Friday, 20 November
