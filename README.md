@@ -34,8 +34,7 @@ for your own applications and put in contact participants with similar interests
 
 ## Registration
 
-Please follow [this](https://apps.crg.es/content/internet/events/webforms/reproducible-genomics-workflows-using-nextflow-and-nf-core) 
-link to register. Registration deadline is the **25th of October**.
+Registration is closed. Should you have registered you will receive a confirmation email soon.
 
 **Note:** *Nextflow training places will be limited to a maximum of 30 attendees.*
 
