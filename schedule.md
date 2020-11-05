@@ -37,7 +37,7 @@ All times are indicated in CET (Central European Time, UTC+1). [This time-zone c
 | 11.30 - 12.30 | Harshil Patel: Featured nf-core pipelines  |
 | 12.30 - 13.00 | 3 flash talks by selected participants  |
 | 13.00 - 14.30 | Lunch  |
-| 14.30 - 15.30 | nf-core training  |
+| 14.30 - 15.30 | Phil Ewels: Running nf-core pipelines + Contributing to nf-core  |
 | 15.30 - 17.30 | Hackathon  |
 
 #### Friday, 20 November
