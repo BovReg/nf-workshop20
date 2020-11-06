@@ -42,6 +42,7 @@ Download the training material copy & pasting the following command in the termi
 aws s3 sync s3://cbcrg-eu/nf-training-bovreg . 
 ----
 
-[IMPORTANT]
+[WARNING]
 ====
 Don’t miss the ending dot in the above command.
+====
