@@ -34,13 +34,11 @@ The aim of this guide is to cover a vast part of Nextflow features ranging from 
 
 :leveloffset: +1
 
-include::intro.adoc[]
+include::00_intro.adoc[]
 
-include::test.adoc[]
+include::01_setup.adoc[]
 
-// include::setup.adoc[]
-
-// include::datasets.adoc[]
+include::02_get_started.adoc[]
 
 // include::workflow.adoc[]
 
