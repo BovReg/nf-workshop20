@@ -1,4 +1,4 @@
-= Reproducible genomics workflows using Nextflow and nf-core image:BovReg_logo.jpg[Logo,150,50,float="right", role="titlelogo"]
+= Nextflow tutorial image:BovReg_logo.jpg[Logo,150,50,float="right", role="titlelogo"]
 :docinfo: private
 :year: 2020
 :event: Reproducible genomics workflows using Nextflow and nf-core
@@ -34,11 +34,15 @@ The aim of this guide is to cover a vast part of Nextflow features ranging from 
 
 :leveloffset: +1
 
-include::00_intro.adoc[]
+// include::00_intro.adoc[]
 
 include::01_setup.adoc[]
 
 include::02_get_started.adoc[]
+
+include::03_channels.adoc[]
+
+include::04_processes.adoc[]
 
 // include::workflow.adoc[]
 
