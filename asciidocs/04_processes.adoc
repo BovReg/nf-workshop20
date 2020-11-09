@@ -455,7 +455,7 @@ process foo {
   """
 }
 
-receiver.println { "Received: $it" }
+receiver.view { "Received: $it" }
 ----
 
 === Output files
@@ -474,7 +474,7 @@ process randomNum {
     '''
 }
 
-numbers.println { "Received: " + it.text }
+numbers.view { "Received: " + it.text }
 ----
 
 In the above example the process `randomNum` creates a file named `result.txt` containing a random number.
@@ -504,7 +504,7 @@ process splitLetters {
 
 letters
     .flatMap()
-    .println { "File: ${it.name} => ${it.text}" }
+    .view { "File: ${it.name} => ${it.text}" }
 ----
 
 it prints:
@@ -578,7 +578,7 @@ process foo {
   """
 }
 
-bam_ch.println()
+bam_ch.view()
 ----
 
 NOTE: In previous versions of Nextflow `tuple` was called `set` but it was used exactly with the same semantic. It can still be used for backward compatibility.
