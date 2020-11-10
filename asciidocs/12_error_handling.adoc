@@ -51,9 +51,9 @@ The task execution directory contains these files:
 
 * `.command.log`: The wrapper execution output.
 
-* `.command.begin: Sentinel file created as soon as the job is launched.
+* `.command.begin`: Sentinel file created as soon as the job is launched.
 
-* `.exitcode: A file containing the task exit code.
+* `.exitcode`: A file containing the task exit code.
 
 * Task input files (symlinks)
 
