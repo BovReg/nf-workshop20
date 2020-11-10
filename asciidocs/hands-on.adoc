@@ -1,4 +1,4 @@
-= Nextflow tutorial image:BovReg_logo.jpg[Logo,150,50,float="right", role="titlelogo"]
+= Nextflow training image:BovReg_logo.jpg[Logo,150,50,float="right", role="titlelogo"]
 :docinfo: private
 :year: 2020
 :event: Reproducible genomics workflows using Nextflow and nf-core
@@ -44,10 +44,20 @@ include::03_channels.adoc[]
 
 include::04_processes.adoc[]
 
-// include::workflow.adoc[]
+include::05_operators.adoc[]
 
-// include::setup.adoc[]
+include::06_groovy.adoc[]
 
-// include::implementation.adoc[]
+include::07_rnaseq_pipeline.adoc[]
+
+include::08_containers.adoc[]
+
+include::09_nf_config.adoc[]
+
+include::10_deployment.adoc[]
+
+include::11_execution.adoc[]
+
+include::12_error_handling.adoc[]
 
 :leveloffset: -1
