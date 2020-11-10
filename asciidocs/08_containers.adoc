@@ -178,7 +178,7 @@ docker run --volume $PWD/data/ggal/transcriptome.fa:/transcriptome.fa my-image \
   salmon index -t /transcriptome.fa -i index 
 ----
 
-WARNING: the generated `transcript-index` directory is still not accessible in the host file system (and actually it went lost).
+IMPORTANT: the generated `transcript-index` directory is still not accessible in the host file system (and actually it went lost).
 
 TIP: An easier way is to mount a parent directory to an identical one in the container, 
 this allows you to use the same path when running it in the container eg. 
