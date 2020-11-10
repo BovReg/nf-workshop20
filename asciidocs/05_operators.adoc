@@ -10,7 +10,7 @@
 ----
 nums = Channel.from(1,2,3,4)         // <1>
 square = nums.map { it -> it * it }  // <2> 
-square.view()                     // <3>
+square.view()                        // <3>
 ----
 
 image::channel-map.png[]
