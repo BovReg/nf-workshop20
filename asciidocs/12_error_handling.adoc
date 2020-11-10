@@ -105,7 +105,7 @@ process foo {
     your_command --this --that
   """
 }
----
+----
 
 Using the `retry` error strategy the task is re-executed a second time if it returns a non-zero exit status before stopping the complete workflow execution.
 
