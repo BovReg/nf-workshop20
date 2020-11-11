@@ -61,7 +61,7 @@ The task execution directory contains these files:
 
 Verify that the `.command.sh` file contains the expected command to be executed and all variables are correctly resolved.
 
-Also verify the existence of the file `.exitcode file`. If missing and also the file `.command.begin` does not exist, the task was never 
+Also verify the existence of the file `.exitcode`. If missing and also the file `.command.begin` does not exist, the task was never 
 executed by the subsystem (eg. the batch scheduler). If the `.command.begin` file exist, the job was launched but the it likely was abruptly killed.
 
 You can replicate the failing execution using the command bash `.command.run` and verify the cause of the error.
