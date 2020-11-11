@@ -177,6 +177,10 @@ string to be executed. Then use this function as the process script body.
 
 Nextflow processes are isolated from each other but can communicate between themselves sending values through channels.
 
+Inputs implicitly determine the dependency and the parallel execution of the process. The process execution is fired each time a new data is ready to be consumed from the input channel:
+
+image::channel-process.png[]
+
 The input block defines which channels the process is expecting to receive inputs data from. You can only define one input block at a time and it must contain one or more inputs declarations.
 
 The input block follows the syntax shown below:
@@ -371,7 +375,7 @@ process foo {
 }
 ----
 
-In the above example the process is executed only two time, because when a channel has no more data to be processed it stops the process execution. 
+In the above example the process is executed only two times, because when a channel has no more data to be processed it stops the process execution. 
 
 IMPORTANT: Note however that _value_ channel do not affect the process termination. 
 
