@@ -98,16 +98,18 @@ The nextflow log command lists the executions run in the current folder:
 [source,config,linenums]
 ----
 $ nextflow log
-2020-11-09 20:01:47	43.3s   	exotic_golick         	ERR   	3b6df9bd10 	16f0f5be-2305-4642-9e10-f499974f5854	nextflow run nf-core/rnaseq -profile singularity,test -c ../../config_nxf_crg/crg.config -with-tower
-2020-11-09 20:05:02	4m 3s   	goofy_brattain        	OK    	3b6df9bd10 	0e814cef-6352-409c-b405-f23aad45d475	nextflow run nf-core/rnaseq -profile singularity,test -c ../../config_nxf_crg/crg.config -with-tower
-2020-11-10 22:22:37	2m 36s  	fervent_kowalevski      OK    	3b6df9bd10 	82e80711-1019-495f-bfb2-74a65b71188b	nextflow run nf-core/rnaseq -profile singularity,test -c ../../config_nxf_crg/crg.config -with-tower -resume
+TIMESTAMP          	DURATION	RUN NAME             	STATUS	REVISION ID	SESSION ID                          	COMMAND
+2020-11-10 22:32:33	1.6s    	friendly_raman       	OK    	96eb04d6a4 	2b90bac5-5124-4933-a345-afb28ca4b184	nextflow run hello
+2020-11-10 22:35:39	33s     	condescending_fourier	OK    	708cf52a33 	a8d1ece2-a6cb-493f-b54e-dac7266d2669	nextflow run rnaseq-nf -with-docker
+2020-11-10 22:55:30	1.7s    	insane_swanson       	ERR   	708cf52a33 	cc03a378-b524-4cb1-a100-6751dfe2c0b3	nextflow run rnaseq-nf
+2020-11-10 22:55:50	25.9s   	focused_mccarthy     	OK    	708cf52a33 	cc03a378-b524-4cb1-a100-6751dfe2c0b3	nextflow run rnaseq-nf -resume -with-docker
 ----
 
 You can use either the *session ID* or the *run name* to recover a specific execution. For example:
 
 [source]
 ----
-nextflow run nf-core/rnaseq -resume goofy_brattain
+nextflow run rnaseq-nf -resume condescending_fourier -with-docker
 ----
 
 == Execution provenance
@@ -117,31 +119,30 @@ provenance report.
 
 By default, it lists the work directories used to compute each task. For example:
 
-
 [source]
 ----
-$ nextflow log tiny_fermat
+$ nextflow log condescending_fourier
 
-/data/.../work/7b/3753ff13b1fa5348d2d9b6f512153a
-/data/.../work/c1/56a36d8f498c99ac6cba31e85b3e0c
-/data/.../work/f7/659c65ef60582d9713252bcfbcc310
-/data/.../work/82/ba67e3175bd9e6479d4310e5a92f99
-/data/.../work/e5/2816b9d4e7b402bfdd6597c2c2403d
-/data/.../work/3b/3485d00b0115f89e4c202eacf82eba
+/data/.../work/e0/3192ad7ddc661e3054de66572cf6f9
+/data/.../work/08/e7f13a32ccc0b2b1fe0c00bce4bd14
+/data/.../work/5e/6dd708bf0e49ccba397d7b629af0e9
+/data/.../work/51/1ae924e73bdd8ee91a660ca669fc4d
+/data/.../work/5a/1b1ac5e340852e6bb4c2c919504025
+/data/.../work/a9/784d05293b429146d2b5a43b352899
 ----
 
 Using the option `-f` (fields) it’s possible to specify which metadata should be printed by the `log` command. For example:
 
 [source]
 ----
-$ nextflow log tiny_fermat -f 'process,exit,hash,duration'
+$ nextflow log condescending_fourier -f 'process,exit,hash,duration'
 
-index    0   7b/3753ff  2.0s
-fastqc   0   c1/56a36d  9.3s
-fastqc   0   f7/659c65  9.1s
-quant    0   82/ba67e3  2.7s
-quant    0   e5/2816b9  3.2s
-multiqc  0   3b/3485d0  6.3s
+RNASEQ:FASTQC	0	e0/3192ad	21.2s
+RNASEQ:FASTQC	0	08/e7f13a	21.1s
+RNASEQ:INDEX	0	5e/6dd708	6.6s
+RNASEQ:QUANT	0	51/1ae924	4.1s
+RNASEQ:QUANT	0	5a/1b1ac5	3.9s
+MULTIQC	0	a9/784d05	10s
 ----
 
 The complete list of available fields can be retrieved with the command:
@@ -155,10 +156,10 @@ The option `-F` allows the specification of a filtering criteria to print only a
 
 [source]
 ----
-$ nextflow log tiny_fermat -F 'process =~ /fastqc/'
+$ nextflow log condescending_fourier -F 'process =~ /RNASEQ:FASTQC/'
 
-/data/.../work/c1/56a36d8f498c99ac6cba31e85b3e0c
-/data/.../work/f7/659c65ef60582d9713252bcfbcc310
+/data/.../work/e0/3192ad7ddc661e3054de66572cf6f9
+/data/.../work/08/e7f13a32ccc0b2b1fe0c00bce4bd14
 ----
 
 This can be useful to locate specific tasks work directories.
@@ -187,7 +188,7 @@ Save the above snippet in a file named `template.html`. Then run this command:
 
 [source]
 ----
-nextflow log tiny_fermat -t template.html > prov.html
+nextflow log condescending_fourier -t template.html > prov.html
 ----
 
 Finally open the file `prov.html` file with a browser.
