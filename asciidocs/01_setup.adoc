@@ -13,8 +13,8 @@ Optional requirements:
 * https://github.com/sylabs/singularity[Singularity] 2.5.x (or later, optional)
 * https://conda.io/[Conda] 4.5 (or later, optional) 
 * http://www.graphviz.org/[Graphviz] (optional)
-* https://aws.amazon.com/cli/ [AWS CLI] (optional)
-* AWS Batch computing environment properly configured (optional)
+* https://aws.amazon.com/cli/[AWS CLI] (optional)
+* AWS Cloud 9 environment properly configured (optional)
 
 == Launch the cloud environment
 
@@ -27,7 +27,7 @@ your (first) name as the IAM user. Below we included the list with all the users
 
 === Steps to launch the AWS 9 cloud environment
 
-1. Open this address on your browser: eu-central-1.console.aws.amazon.com/cloud9/home[https://eu-central-1.console.aws.amazon.com/cloud9/home]
+1. Open this address on your browser: https://eu-west-1.console.aws.amazon.com/cloud9/home[eu-west-1.console.aws.amazon.com/cloud9/home]
 
 2. Once you are in the AWS login page, select *IAM USER* and please fill the credentials below:
 
@@ -78,6 +78,3 @@ Check the correct installation running the following command:
 ----
 nextflow info
 ----
-
-
-
