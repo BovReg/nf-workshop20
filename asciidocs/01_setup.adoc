@@ -14,7 +14,7 @@ Optional requirements:
 * https://conda.io/[Conda] 4.5 (or later, optional) 
 * http://www.graphviz.org/[Graphviz] (optional)
 * https://aws.amazon.com/cli/[AWS CLI] (optional)
-* AWS Cloud 9 environment properly configured (optional)
+* https://aws.amazon.com/cloud9/[AWS Cloud 9] environment properly configured (optional)
 
 == Launch the cloud environment
 
@@ -52,6 +52,10 @@ aws s3 sync s3://cbcrg-eu/nf-training-bovreg .
 ====
 Don’t miss the ending dot in the above command.
 ====
+
+NOTE: We recommend to follow this tutorial using the AWS Cloud 9 environment. However, if you want to use your machine you can 
+download all the materials in a zip file clicking on this https://cbcrg-eu.s3-eu-west-1.amazonaws.com/nf-training-bovreg/nf-training-bovreg.zip[link]
+
 
 == Environment setup 
 

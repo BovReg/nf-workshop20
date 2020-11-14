@@ -4,6 +4,9 @@
 :event: Reproducible genomics workflows using Nextflow and nf-core
 :hide-uri-scheme:
 :nofooter:
+:docinfo: shared-footer
+// :last-update-label: Creative Commons CC BY-NC-ND (Attribution-NonCommercial-ShareAlike-NoDerivatives) Copyright 2020, https://www.seqera.io/[Seqera Labs]. All rights reserved. Not for redistribution.
+// :last-update-label!: Hello world
 :icons: font
 :toclevels: 3
 :imagesdir: ./assets/
