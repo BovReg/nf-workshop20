@@ -741,8 +741,8 @@ p, p.lead, .paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-t
   body.book #toc { border: 0 !important; text-align: left !important; padding: 0 !important; margin: 0 !important; }
   body.book #toc, body.book #preamble, body.book h1.sect0, body.book .sect1 > h2 { page-break-before: always; }
   .listingblock code[data-lang]:before { display: block; }
-  #footer { background: none !important; padding: 0 0.9375em; }
-  #footer-text { color: rgba(0, 0, 0, 0.6) !important; font-size: 0.9em; }
+  #footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+  #footer-text{color:rgba(255,255,255,.8);line-height:1.44}
   .hide-on-print { display: none !important; }
   .print-only { display: block !important; }
   .hide-for-print { display: none !important; }
