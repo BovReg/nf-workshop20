@@ -395,7 +395,7 @@ process bar {
 }
 ----
 
-==== Exercise 
+==== Exercise
 
 Write a process that is executed for each read file matching the pattern `data/ggal/*_1.fa` and 
 uses the same `data/ggal/transcriptome.fa` in each execution. 
