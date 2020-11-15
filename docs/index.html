@@ -407,18 +407,22 @@ on the terminal window that you will find at the botton of the page:</p>
 </tr>
 </table>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-We recommend to follow this tutorial using the AWS Cloud 9 environment. However, if you want to use your machine you can
-download all the materials in a zip file clicking on this <a href="https://cbcrg-eu.s3-eu-west-1.amazonaws.com/nf-training-bovreg/nf-training-bovreg.zip">link</a>
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>We recommend to follow this tutorial using the AWS Cloud 9 environment. However, if you want to use your machine you can
+also download all the materials using <code>curl</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="BASH">curl https://cbcrg-eu.s3-eu-west-1.amazonaws.com/nf-training-bovreg/nf-training-bovreg.tar.gz | tar xvz</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or alternatively if you have <code>wget</code> instead of <code>curl</code> in your machine:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="BASH">wget -q -O- https://cbcrg-eu.s3-eu-west-1.amazonaws.com/nf-training-bovreg/nf-training-bovreg.tar.gz | tar xvz</code></pre>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1287,7 +1291,7 @@ process foo {
 </td>
 <td class="content">
 A process script can contain any string format supported by the Groovy programming language. This allows us to use string
-interpolation or multiline string as in the script above. Refer to String interpolation for more information.
+interpolation or multiline string as in the script above. Refer to <a href="#_string_interpolation">String interpolation</a> for more information.
 </td>
 </tr>
 </table>
