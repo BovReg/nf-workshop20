@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="generator" content="Asciidoctor 2.0.12">
 <title>Nextflow training</title>
 <link rel="stylesheet" href="./css/crg.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -390,7 +390,7 @@ on the terminal window that you will find at the botton of the page:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">aws s3 sync s3://cbcrg-eu/nf-training-bovreg .</code></pre>
+<pre class="CodeRay highlight"><code data-lang="BASH">aws s3 sync s3://cbcrg-eu/nf-training-bovreg .</code></pre>
 </div>
 </div>
 <div class="admonitionblock warning">
@@ -428,7 +428,7 @@ download all the materials in a zip file clicking on this <a href="https://cbcrg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">source setup/all.sh</code></pre>
+<pre class="CodeRay highlight"><code data-lang="BASH">source setup/all.sh</code></pre>
 </div>
 </div>
 </div>
@@ -439,7 +439,7 @@ download all the materials in a zip file clicking on this <a href="https://cbcrg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">curl https://get.nextflow.io | bash
+<pre class="CodeRay highlight"><code data-lang="BASH">curl https://get.nextflow.io | bash
 mv nextflow ~/bin</code></pre>
 </div>
 </div>
@@ -448,7 +448,7 @@ mv nextflow ~/bin</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow info</code></pre>
+<pre class="CodeRay highlight"><code data-lang="BASH">nextflow info</code></pre>
 </div>
 </div>
 </div>
@@ -572,7 +572,7 @@ language. Groovy can be considered as Python for Java in that is simplifies the 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">#!/usr/bin/env nextflow
+<pre class="CodeRay highlight"><code data-lang="nextflow">#!/usr/bin/env nextflow
 
 params.greeting  = 'Hello world!'
 greeting_ch = Channel.from(params.greeting)
@@ -615,7 +615,7 @@ contents to uppercase letters. The resulting strings are emitted on the <code>re
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run hello.nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run hello.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -623,7 +623,7 @@ contents to uppercase letters. The resulting strings are emitted on the <code>re
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">N E X T F L O W  ~  version 20.10.0
+<pre class="CodeRay highlight"><code data-lang="cmd">N E X T F L O W  ~  version 20.10.0
 Launching `hello.nf` [infallible_wilson] - revision: db17b351c4
 executor &gt;  local (3)
 [ca/361e5c] process &gt; splitLetters (1)   [100%] 1 of 1 ✔
@@ -644,7 +644,7 @@ processing the first split (the chunk Hello) will be executed before the one pro
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">WORLD!
+<pre class="CodeRay highlight"><code data-lang="cmd">WORLD!
 HELLO</code></pre>
 </div>
 </div>
@@ -681,7 +681,7 @@ used instead.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">process convertToUpper {
+<pre class="CodeRay highlight"><code data-lang="cmd">process convertToUpper {
 
     input:
     file y from letters.flatten()
@@ -700,7 +700,7 @@ used instead.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run hello.nf -resume</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run hello.nf -resume</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -708,7 +708,7 @@ used instead.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">N E X T F L O W  ~  version 20.10.0
+<pre class="CodeRay highlight"><code data-lang="cmd">N E X T F L O W  ~  version 20.10.0
 Launching `hello.nf` [gloomy_shockley] - revision: 2a9917d420
 executor &gt;  local (2)
 [ca/361e5c] process &gt; splitLetters (1)   [100%] 1 of 1, cached: 1 ✔
@@ -750,7 +750,7 @@ as shown below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run hello.nf --greeting 'Bonjour le monde!'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run hello.nf --greeting 'Bonjour le monde!'</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -758,7 +758,7 @@ as shown below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">N E X T F L O W  ~  version 20.10.0
+<pre class="CodeRay highlight"><code data-lang="cmd">N E X T F L O W  ~  version 20.10.0
 Launching `hello.nf` [distracted_hilbert] - revision: 2a9917d420
 executor &gt;  local (4)
 [82/18a151] process &gt; splitLetters (1)   [100%] 1 of 1 ✔
@@ -780,6 +780,11 @@ workflows based on the <a href="https://en.wikipedia.org/wiki/Dataflow_programmi
 </div>
 <div class="paragraph">
 <p>They are used to logically connect tasks each other or to implement functional style data transformations.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./assets/channel-files.png" alt="channel files">
+</div>
 </div>
 <div class="sect2">
 <h3 id="_channel_types">3.1. Channel types</h3>
@@ -814,7 +819,7 @@ such as <a href="https://www.nextflow.io/docs/latest/channel.html#from">Channel.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">ch = Channel.from(1,2,3)
+<pre class="CodeRay highlight"><code data-lang="nextflow">ch = Channel.from(1,2,3)
 println(ch)     <i class="conum" data-value="1"></i><b>(1)</b>
 ch.view()       <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
@@ -838,7 +843,7 @@ ch.view()       <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">p = Channel.from(1,2,3)
+<pre class="CodeRay highlight"><code data-lang="nextflow">p = Channel.from(1,2,3)
 p.view()
 p.view()</code></pre>
 </div>
@@ -864,7 +869,7 @@ A queue channel can have one and exactly one producer and one and exactly one co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">ch = Channel.value('Hello')
+<pre class="CodeRay highlight"><code data-lang="nextflow">ch = Channel.value('Hello')
 ch.view()
 ch.view()
 ch.view()</code></pre>
@@ -875,7 +880,7 @@ ch.view()</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">Hello
+<pre class="CodeRay highlight"><code>Hello
 Hello
 Hello</code></pre>
 </div>
@@ -892,7 +897,7 @@ can be specified to bind the channel to a specific value. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">ch1 = Channel.value()                 <i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="CodeRay highlight"><code data-lang="nextflow">ch1 = Channel.value()                 <i class="conum" data-value="1"></i><b>(1)</b>
 ch2 = Channel.value( 'Hello there' )  <i class="conum" data-value="2"></i><b>(2)</b>
 ch2 = Channel.value( [1,2,3,4,5] )    <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 </div>
@@ -921,7 +926,7 @@ ch2 = Channel.value( [1,2,3,4,5] )    <i class="conum" data-value="3"></i><b>(3)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">ch = Channel.from( 1, 3, 5, 7 )
+<pre class="CodeRay highlight"><code data-lang="nextflow">ch = Channel.from( 1, 3, 5, 7 )
 ch.view{ "value: $it" }</code></pre>
 </div>
 </div>
@@ -944,7 +949,7 @@ value: 7</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .of(1..23, 'X', 'Y')
     .view()</code></pre>
 </div>
@@ -957,7 +962,7 @@ value: 7</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">list = ['hello', 'world']
+<pre class="CodeRay highlight"><code data-lang="nextflow">list = ['hello', 'world']
 
 Channel
     .fromList(list)
@@ -973,7 +978,7 @@ matching the specified glob pattern.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel.fromPath( '/data/big/*.txt' )</code></pre>
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel.fromPath( '/data/big/*.txt' )</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1051,7 +1056,7 @@ Two asterisks, i.e. <code>**</code>, works like <code>*</code> but crosses direc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .fromFilePairs('/my/data/SRR*_{1,2}.fastq')
     .view()</code></pre>
 </div>
@@ -1061,7 +1066,7 @@ Two asterisks, i.e. <code>**</code>, works like <code>*</code> but crosses direc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[SRR493366, [/my/data/SRR493366_1.fastq, /my/data/SRR493366_2.fastq]]
+<pre class="CodeRay highlight"><code>[SRR493366, [/my/data/SRR493366_1.fastq, /my/data/SRR493366_2.fastq]]
 [SRR493367, [/my/data/SRR493367_1.fastq, /my/data/SRR493367_2.fastq]]
 [SRR493368, [/my/data/SRR493368_1.fastq, /my/data/SRR493368_2.fastq]]
 [SRR493369, [/my/data/SRR493369_1.fastq, /my/data/SRR493369_2.fastq]]
@@ -1153,7 +1158,7 @@ scripts or tools.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process sayHello {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process sayHello {
   """
   echo 'Hello world!'
   """
@@ -1217,7 +1222,7 @@ composed by multiple commands spanning over multiple lines. For example::</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process example {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process example {
     script:
     """
     blastp -db /data/blast -query query.fa -outfmt 6 &gt; blast_result
@@ -1232,7 +1237,7 @@ composed by multiple commands spanning over multiple lines. For example::</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process pyStuff {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process pyStuff {
   script:
   """
   #!/usr/bin/env python
@@ -1264,7 +1269,7 @@ into separate files and invoke them from the process script.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.data = 'World'
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.data = 'World'
 
 process foo {
   script:
@@ -1301,7 +1306,7 @@ Since Nextflow uses the same Bash syntax for variable substitutions in strings, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   script:
   """
   echo "The current directory is \$PWD"
@@ -1327,7 +1332,7 @@ is to use a script string delimited by single-quote characters</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process bar {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process bar {
   script:
   '''
   echo $PATH | tr : '\\n'
@@ -1345,7 +1350,7 @@ the same script.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.data = 'le monde'
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.data = 'le monde'
 
 process baz {
   shell:
@@ -1364,7 +1369,7 @@ process baz {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.aligner = 'kallisto'
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.aligner = 'kallisto'
 
 process foo {
   script:
@@ -1411,7 +1416,7 @@ string to be executed. Then use this function as the process script body.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">input:
+<pre class="CodeRay highlight"><code data-lang="nextflow">input:
   &lt;input qualifier&gt; &lt;input name&gt; [from &lt;source channel&gt;]</code></pre>
 </div>
 </div>
@@ -1422,7 +1427,7 @@ string to be executed. Then use this function as the process script body.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">num = Channel.from( 1, 2, 3 )
+<pre class="CodeRay highlight"><code data-lang="nextflow">num = Channel.from( 1, 2, 3 )
 
 process basicExample {
   input:
@@ -1439,7 +1444,7 @@ process basicExample {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">process job 3
+<pre class="CodeRay highlight"><code>process job 3
 process job 1
 process job 2</code></pre>
 </div>
@@ -1465,7 +1470,7 @@ Nextflow will stage it in the process execution directory, and it can be access 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">reads = Channel.fromPath( 'data/ggal/*.fq' )
+<pre class="CodeRay highlight"><code data-lang="nextflow">reads = Channel.fromPath( 'data/ggal/*.fq' )
 
 process foo {
     input:
@@ -1482,7 +1487,7 @@ process foo {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">reads = Channel.fromPath( 'data/ggal/*.fq' )
+<pre class="CodeRay highlight"><code data-lang="nextflow">reads = Channel.fromPath( 'data/ggal/*.fq' )
 
 process foo {
     input:
@@ -1500,7 +1505,7 @@ Only change the channel composition.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">reads = Channel.fromPath( 'data/ggal/*.fq' )
+<pre class="CodeRay highlight"><code data-lang="nextflow">reads = Channel.fromPath( 'data/ggal/*.fq' )
 
 process foo {
     input:
@@ -1530,7 +1535,7 @@ created with the <code>file</code> helper function from the file specific channe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.genome = 'data/ggal/transcriptome.fa'
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.genome = 'data/ggal/transcriptome.fa'
 
 process foo {
     input:
@@ -1555,7 +1560,7 @@ In a nutshell the input <code>path</code> automatically handles string values as
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.genome = "$baseDir/data/ggal/transcriptome.fa"
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.genome = "$baseDir/data/ggal/transcriptome.fa"
 
 process foo {
     input:
@@ -1599,7 +1604,7 @@ of a process.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   echo true
   input:
   val x from Channel.from(1,2,3)
@@ -1647,7 +1652,7 @@ execution to stop even if there are other values in other channels.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   echo true
   input:
   val x from Channel.from(1,2)
@@ -1679,7 +1684,7 @@ Note however that <em>value</em> channel do not affect the process termination.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process bar {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process bar {
   echo true
   input:
   val x from Channel.value(1)
@@ -1706,7 +1711,7 @@ uses the same <code>data/ggal/transcriptome.fa</code> in each execution.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">sequences = Channel.fromPath('*.fa')
+<pre class="CodeRay highlight"><code data-lang="nextflow">sequences = Channel.fromPath('*.fa')
 methods = ['regular', 'expresso', 'psicoffee']
 
 process alignSequences {
@@ -1753,7 +1758,7 @@ this is a value which has been defined in the <em>input</em> declaration block, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">methods = ['prot','dna', 'rna']
+<pre class="CodeRay highlight"><code data-lang="nextflow">methods = ['prot','dna', 'rna']
 
 process foo {
   input:
@@ -1778,7 +1783,7 @@ receiver.view { "Received: $it" }</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process randomNum {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process randomNum {
 
     output:
     file 'result.txt' into numbers
@@ -1809,7 +1814,7 @@ This allows to <em>capture</em> multiple files into a list object and output the
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process splitLetters {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process splitLetters {
 
     output:
     file 'chunk_*' into letters
@@ -1869,7 +1874,7 @@ For example::</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process align {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process align {
   input:
   val x from species
   file seq from sequences
@@ -1903,7 +1908,7 @@ following by the definition of each tuple element in the tuple.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">reads_ch = Channel.fromFilePairs('data/ggal/*_{1,2}.fq')
+<pre class="CodeRay highlight"><code data-lang="nextflow">reads_ch = Channel.fromFilePairs('data/ggal/*_{1,2}.fq')
 
 process foo {
   input:
@@ -1949,7 +1954,7 @@ In previous versions of Nextflow <code>tuple</code> was called <code>set</code> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.dbtype = 'nr'
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.dbtype = 'nr'
 params.prot = 'data/prots/*.tfa'
 proteins = Channel.fromPath(params.prot)
 
@@ -1984,7 +1989,7 @@ logging purpose. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   cpus 2
   memory 8.GB
   container 'image/name'
@@ -2018,7 +2023,7 @@ logging purpose. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process makeBams {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process makeBams {
     publishDir "/some/directory/bam_files", mode: 'copy'
 
     input:
@@ -2060,7 +2065,7 @@ The publish directory can be local or remote. For example output files could be 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.reads = 'data/reads/*_{1,2}.fq.gz'
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.reads = 'data/reads/*_{1,2}.fq.gz'
 params.outdir = 'my-results'
 
 Channel
@@ -2117,7 +2122,7 @@ process foo {
 <h3 id="_basic_example">5.1. Basic example</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">nums = Channel.from(1,2,3,4)         <i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="CodeRay highlight"><code data-lang="nextflow">nums = Channel.from(1,2,3,4)         <i class="conum" data-value="1"></i><b>(1)</b>
 square = nums.map { it -&gt; it * it }  <i class="conum" data-value="2"></i><b>(2)</b>
 square.view()                        <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 </div>
@@ -2148,7 +2153,7 @@ square.view()                        <i class="conum" data-value="3"></i><b>(3)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel.from(1,2,3,4)
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel.from(1,2,3,4)
         .map { it -&gt; it * it }
         .view()</code></pre>
 </div>
@@ -2189,7 +2194,7 @@ square.view()                        <i class="conum" data-value="3"></i><b>(3)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
       .from('foo', 'bar', 'baz')
       .view()</code></pre>
 </div>
@@ -2199,7 +2204,7 @@ square.view()                        <i class="conum" data-value="3"></i><b>(3)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">foo
+<pre class="CodeRay highlight"><code>foo
 bar
 baz</code></pre>
 </div>
@@ -2209,7 +2214,7 @@ baz</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
       .from('foo', 'bar', 'baz', 'qux')
       .view { "- $it" }</code></pre>
 </div>
@@ -2232,7 +2237,7 @@ baz</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from( 'hello', 'world' )
     .map { it -&gt; it.reverse() }
     .view()</code></pre>
@@ -2243,7 +2248,7 @@ baz</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from( 'hello', 'world' )
     .map { word -&gt; [word, word.size()] }
     .println { word, len -&gt; "$word contains $len letters" }</code></pre>
@@ -2258,7 +2263,7 @@ Finally print the resulting channel.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel.fromPath('data/ggal/*.fq')
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel.fromPath('data/ggal/*.fq')
         .map { file -&gt; [ file.name, file ] }
         .view { name, file -&gt; "&gt; file: $name" }</code></pre>
 </div>
@@ -2272,7 +2277,7 @@ Finally print the resulting channel.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
      .from( 'a', 'b', 'c' )
      .into{ foo; bar }
 
@@ -2300,7 +2305,7 @@ Note the use in this example of curly brackets and the <code>;</code> as channel
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">c1 = Channel.from( 1,2,3 )
+<pre class="CodeRay highlight"><code data-lang="nextflow">c1 = Channel.from( 1,2,3 )
 c2 = Channel.from( 'a','b' )
 c3 = Channel.from( 'z' )
 
@@ -2309,7 +2314,7 @@ c1 .mix(c2,c3).view()</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">1
+<pre class="CodeRay highlight"><code>1
 2
 a
 3
@@ -2339,7 +2344,7 @@ of the first. Indeed in the above example the element <code>a</code> has been pr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">foo = [1,2,3]
+<pre class="CodeRay highlight"><code data-lang="nextflow">foo = [1,2,3]
 bar = [4, 5, 6]
 
 Channel
@@ -2353,7 +2358,7 @@ Channel
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">1
+<pre class="CodeRay highlight"><code>1
 2
 3
 4
@@ -2369,7 +2374,7 @@ Channel
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from( 1, 2, 3, 4 )
     .collect()
     .view()</code></pre>
@@ -2380,7 +2385,7 @@ Channel
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[1,2,3,4]</code></pre>
+<pre class="CodeRay highlight"><code>[1,2,3,4]</code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -2406,7 +2411,7 @@ The result of the <code>collect</code> operator is a <strong>value</strong> chan
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
      .from( [1,'A'], [1,'B'], [2,'C'], [3, 'B'], [1,'C'], [2, 'A'], [3, 'D'] )
      .groupTuple()
      .view()</code></pre>
@@ -2417,7 +2422,7 @@ The result of the <code>collect</code> operator is a <strong>value</strong> chan
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[1, [A, B, C]]
+<pre class="CodeRay highlight"><code>[1, [A, B, C]]
 [2, [C, A]]
 [3, [B, D]]</code></pre>
 </div>
@@ -2442,7 +2447,7 @@ files having the same common prefix.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">left = Channel.from(['X', 1], ['Y', 2], ['Z', 3], ['P', 7])
+<pre class="CodeRay highlight"><code data-lang="nextflow">left = Channel.from(['X', 1], ['Y', 2], ['Z', 3], ['P', 7])
 right= Channel.from(['Z', 6], ['Y', 5], ['X', 4])
 left.join(right).view()</code></pre>
 </div>
@@ -2452,7 +2457,7 @@ left.join(right).view()</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">[Z, 3, 6]
+<pre class="CodeRay highlight"><code>[Z, 3, 6]
 [Y, 2, 5]
 [X, 1, 4]</code></pre>
 </div>
@@ -2468,7 +2473,7 @@ left.join(right).view()</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from(1,2,3,40,50)
     .branch {
         small: it &lt; 10
@@ -3119,7 +3124,7 @@ println result</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">params.reads = "$baseDir/data/ggal/*_{1,2}.fq"
+<pre class="CodeRay highlight"><code data-lang="nextflow">params.reads = "$baseDir/data/ggal/*_{1,2}.fq"
 params.transcriptome = "$baseDir/data/ggal/transcriptome.fa"
 params.multiqc = "$baseDir/multiqc"
 
@@ -3132,7 +3137,7 @@ following command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script1.nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script1.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3140,7 +3145,7 @@ following command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script1.nf --reads this/and/that</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script1.nf --reads this/and/that</code></pre>
 </div>
 </div>
 <div class="sect3">
@@ -3210,7 +3215,7 @@ and finally the command <a href="https://www.nextflow.io/docs/latest/process.htm
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">/*
+<pre class="CodeRay highlight"><code data-lang="nextflow">/*
  * pipeline input parameters
  */
 params.reads = "$baseDir/data/ggal/*_{1,2}.fq"
@@ -3258,7 +3263,7 @@ that it is used in the command script to reference that file in the Salmon comma
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script2.nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script2.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3270,7 +3275,7 @@ as shown below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script2.nf -with-docker</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script2.nf -with-docker</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3282,7 +3287,7 @@ as shown below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">docker.enabled = true</code></pre>
+<pre class="CodeRay highlight"><code data-lang="config">docker.enabled = true</code></pre>
 </div>
 </div>
 <div class="sect3">
@@ -3340,7 +3345,7 @@ operator.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">read_pairs_ch.view()</code></pre>
+<pre class="CodeRay highlight"><code data-lang="nextflow">read_pairs_ch.view()</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3348,7 +3353,7 @@ operator.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script3.nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script3.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3369,7 +3374,7 @@ representing the actual files.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script3.nf --reads 'data/ggal/*_{1,2}.fq'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script3.nf --reads 'data/ggal/*_{1,2}.fq'</code></pre>
 </div>
 </div>
 <div class="admonitionblock important">
@@ -3438,7 +3443,7 @@ by the <code>read_pairs_ch</code> channel.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script4.nf -resume</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script4.nf -resume</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3452,7 +3457,7 @@ by the <code>read_pairs_ch</code> channel.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script4.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script4.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3511,7 +3516,7 @@ read pairs which are provided to the <code>quantification</code> steps</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script5.nf -resume</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script5.nf -resume</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3566,7 +3571,7 @@ a final report by using the <a href="http://multiqc.info/">MultiQC</a> tool.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script6.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script6.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3614,7 +3619,7 @@ when the script completes.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">workflow.onComplete {
+<pre class="CodeRay highlight"><code data-lang="nextflow">workflow.onComplete {
     println ( workflow.success ? "\nDone! Open the following report in your browser --&gt;  $params.outdir/multiqc_report.html\n" : "Oops .. something went wrong" )
 }</code></pre>
 </div>
@@ -3624,7 +3629,7 @@ when the script completes.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
 </div>
 </div>
 </div>
@@ -3641,7 +3646,7 @@ to the pipeline execution <code>PATH</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">#!/bin/bash
+<pre class="CodeRay highlight"><code data-lang="bash">#!/bin/bash
 set -e
 set -u
 
@@ -3657,7 +3662,7 @@ fastqc -o fastqc_${sample_id}_logs -f fastq -q ${reads}</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">chmod +x fastqc.sh
+<pre class="CodeRay highlight"><code data-lang="cmd">chmod +x fastqc.sh
 mkdir -p bin
 mv fastqc.sh bin</code></pre>
 </div>
@@ -3668,7 +3673,7 @@ the following code:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">script:
+<pre class="CodeRay highlight"><code data-lang="nextflow">script:
 """
 fastqc.sh "$sample_id" "$reads"
 """</code></pre>
@@ -3679,7 +3684,7 @@ fastqc.sh "$sample_id" "$reads"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq'</code></pre>
 </div>
 </div>
 <div class="sect3">
@@ -3709,7 +3714,7 @@ fastqc.sh "$sample_id" "$reads"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run rnaseq-nf -with-docker -with-report -with-trace -with-timeline -with-dag dag.png</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run rnaseq-nf -with-docker -with-report -with-trace -with-timeline -with-dag dag.png</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3751,7 +3756,7 @@ command line option. Execute again the previous example specifying your email ad
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq' -N &lt;your email&gt;</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run script7.nf -resume --reads 'data/ggal/*_{1,2}.fq' -N &lt;your email&gt;</code></pre>
 </div>
 </div>
 <div class="admonitionblock warning">
@@ -3790,7 +3795,7 @@ in the Nextflow config file. See <a href="https://www.nextflow.io/docs/latest/ma
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run nextflow-io/rnaseq-nf -with-docker</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run nextflow-io/rnaseq-nf -with-docker</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3799,7 +3804,7 @@ Use the command info to show the project information, e.g.:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow info nextflow-io/rnaseq-nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow info nextflow-io/rnaseq-nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3807,7 +3812,7 @@ Use the command info to show the project information, e.g.:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="cmd" class="language-cmd hljs">nextflow run nextflow-io/rnaseq-nf -r dev</code></pre>
+<pre class="CodeRay highlight"><code data-lang="cmd">nextflow run nextflow-io/rnaseq-nf -r dev</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3875,7 +3880,7 @@ or hosted by other parties like for example <a href="https://quay.io/">Quay</a>.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run &lt;container-name&gt;</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker run &lt;container-name&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3883,7 +3888,7 @@ or hosted by other parties like for example <a href="https://quay.io/">Quay</a>.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run hello-world</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker run hello-world</code></pre>
 </div>
 </div>
 </div>
@@ -3894,7 +3899,7 @@ or hosted by other parties like for example <a href="https://quay.io/">Quay</a>.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker pull debian:stretch-slim</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker pull debian:stretch-slim</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3909,7 +3914,7 @@ in the containerised operating system. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run -it debian:jessie-slim bash</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker run -it debian:jessie-slim bash</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3943,7 +3948,7 @@ following content:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">FROM debian:jessie-slim
+<pre class="CodeRay highlight"><code data-lang="bash">FROM debian:jessie-slim
 
 MAINTAINER &lt;your name&gt;
 
@@ -3963,7 +3968,7 @@ ENV PATH=$PATH:/usr/games/</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker build -t my-image .</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker build -t my-image .</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3972,7 +3977,7 @@ has been created listing all available images:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker images</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker images</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3980,7 +3985,7 @@ has been created listing all available images:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run my-image cowsay Hello Docker!</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker run my-image cowsay Hello Docker!</code></pre>
 </div>
 </div>
 </div>
@@ -3991,7 +3996,7 @@ has been created listing all available images:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">RUN curl -sSL https://github.com/COMBINE-lab/salmon/releases/download/v0.8.2/Salmon-0.8.2_linux_x86_64.tar.gz | tar xz \
+<pre class="CodeRay highlight"><code data-lang="bash">RUN curl -sSL https://github.com/COMBINE-lab/salmon/releases/download/v0.8.2/Salmon-0.8.2_linux_x86_64.tar.gz | tar xz \
  &amp;&amp; mv /Salmon-*/bin/* /usr/bin/ \
  &amp;&amp; mv /Salmon-*/lib/* /usr/lib/</code></pre>
 </div>
@@ -4001,7 +4006,7 @@ has been created listing all available images:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker build -t my-image .</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker build -t my-image .</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4016,7 +4021,7 @@ different image ID.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">docker run my-image salmon --version</code></pre>
+<pre class="CodeRay highlight"><code>docker run my-image salmon --version</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4024,7 +4029,7 @@ different image ID.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">docker run -it my-image bash</code></pre>
+<pre class="CodeRay highlight"><code>docker run -it my-image bash</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4041,7 +4046,7 @@ different image ID.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run my-image \
+<pre class="CodeRay highlight"><code data-lang="bash">docker run my-image \
   salmon index -t $PWD/data/ggal/transcriptome.fa -i index</code></pre>
 </div>
 </div>
@@ -4057,7 +4062,7 @@ it cannot access the hosting file system by default.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run --volume $PWD/data/ggal/transcriptome.fa:/transcriptome.fa my-image \
+<pre class="CodeRay highlight"><code data-lang="bash">docker run --volume $PWD/data/ggal/transcriptome.fa:/transcriptome.fa my-image \
   salmon index -t /transcriptome.fa -i index</code></pre>
 </div>
 </div>
@@ -4088,7 +4093,7 @@ this allows you to use the same path when running it in the container eg.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker run --volume $HOME:$HOME --workdir $PWD my-image \
+<pre class="CodeRay highlight"><code data-lang="bash">docker run --volume $HOME:$HOME --workdir $PWD my-image \
   salmon index -t $PWD/data/ggal/transcriptome.fa -i index</code></pre>
 </div>
 </div>
@@ -4125,7 +4130,7 @@ the following command, entering the user name and password you specified registe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker login</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker login</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4133,7 +4138,7 @@ the following command, entering the user name and password you specified registe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker tag my-image &lt;user-name&gt;/my-image</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker tag my-image &lt;user-name&gt;/my-image</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4141,7 +4146,7 @@ the following command, entering the user name and password you specified registe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker push &lt;user-name&gt;/my-image</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker push &lt;user-name&gt;/my-image</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4149,7 +4154,7 @@ the following command, entering the user name and password you specified registe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker pull &lt;user-name&gt;/my-image</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker pull &lt;user-name&gt;/my-image</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4157,7 +4162,7 @@ the following command, entering the user name and password you specified registe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">Digest: sha256:aeacbd7ea1154f263cda972a96920fb228b2033544c2641476350b9317dab266
+<pre class="CodeRay highlight"><code data-lang="bash">Digest: sha256:aeacbd7ea1154f263cda972a96920fb228b2033544c2641476350b9317dab266
 Status: Downloaded newer image for nextflow/rnaseq-nf:latest</code></pre>
 </div>
 </div>
@@ -4167,7 +4172,7 @@ in a univocally manner. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">docker pull nextflow/rnaseq-nf@sha256:aeacbd7ea1154f263cda972a96920fb228b2033544c2641476350b9317dab266</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">docker pull nextflow/rnaseq-nf@sha256:aeacbd7ea1154f263cda972a96920fb228b2033544c2641476350b9317dab266</code></pre>
 </div>
 </div>
 </div>
@@ -4178,7 +4183,7 @@ in a univocally manner. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">nextflow run script2.nf -with-docker my-image</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">nextflow run script2.nf -with-docker my-image</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4202,7 +4207,7 @@ every time as a command line argument.</p>
 <h4 id="_create_a_singularity_image">8.2.1. Create a Singularity image</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="singularity" class="language-singularity hljs">Singularity images are created using a Singularity file in similar manner to Docker, though using a different syntax.
+<pre class="CodeRay highlight"><code data-lang="singularity">Singularity images are created using a Singularity file in similar manner to Docker, though using a different syntax.
 
 Bootstrap: docker
 From: debian:stretch-slim
@@ -4226,7 +4231,7 @@ curl -sSL https://github.com/COMBINE-lab/salmon/releases/download/v1.0.0/salmon-
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">sudo singularity build my-image.sif Singularity</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">sudo singularity build my-image.sif Singularity</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4241,7 +4246,7 @@ workstation and then deploy in the cluster just copying the image file.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">singularity exec my-image.sif cowsay 'Hello Singularity'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">singularity exec my-image.sif cowsay 'Hello Singularity'</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4249,7 +4254,7 @@ workstation and then deploy in the cluster just copying the image file.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">singularity shell my-image.sif</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">singularity shell my-image.sif</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4257,7 +4262,7 @@ workstation and then deploy in the cluster just copying the image file.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">touch hello.txt
+<pre class="CodeRay highlight"><code data-lang="bash">touch hello.txt
 ls -la</code></pre>
 </div>
 </div>
@@ -4281,7 +4286,7 @@ Note how the files on the host environment are shown. Singularity automatically 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">singularity pull docker://debian:stretch-slim</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">singularity pull docker://debian:stretch-slim</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4298,7 +4303,7 @@ Note how the files on the host environment are shown. Singularity automatically 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">nextflow run script7.nf -with-singularity nextflow/rnaseq-nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">nextflow run script7.nf -with-singularity nextflow/rnaseq-nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4324,7 +4329,7 @@ Note how the files on the host environment are shown. Singularity automatically 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="yaml" class="language-yaml hljs">name: nf-tutorial
+<pre class="CodeRay highlight"><code data-lang="yaml">name: nf-tutorial
 channels:
   - defaults
   - bioconda
@@ -4340,7 +4345,7 @@ dependencies:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">conda env create --file env.yml</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">conda env create --file env.yml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4348,7 +4353,7 @@ dependencies:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">conda env list</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">conda env list</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4356,7 +4361,7 @@ dependencies:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">conda activate nf-tutorial</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">conda activate nf-tutorial</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4364,7 +4369,7 @@ dependencies:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">nextflow run script7.nf -with-conda /home/ubuntu/miniconda2/envs/nf-tutorial</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">nextflow run script7.nf -with-conda /home/ubuntu/miniconda2/envs/nf-tutorial</code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -4422,7 +4427,7 @@ file by using the command line option <code>-c &lt;config file&gt;</code>.</p>
 <h3 id="_config_syntax">9.1. Config syntax</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">name = value</code></pre>
+<pre class="CodeRay highlight"><code>name = value</code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -4448,7 +4453,7 @@ since the first is interpreted as the number one, while the latter is interprete
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">propertyOne = 'world'
+<pre class="CodeRay highlight"><code data-lang="config">propertyOne = 'world'
 anotherProp = "Hello $propertyOne"
 customPath = "$PATH:/my/app/folder"</code></pre>
 </div>
@@ -4474,7 +4479,7 @@ as <code>$PATH</code>, <code>$HOME</code>, <code>$PWD</code>, etc.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">// comment a single config file
+<pre class="CodeRay highlight"><code data-lang="config">// comment a single config file
 
 /*
    a comment spanning
@@ -4492,7 +4497,7 @@ This is shown in the following example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">alpha.x  = 1
+<pre class="CodeRay highlight"><code data-lang="config">alpha.x  = 1
 alpha.y  = 'string value..'
 
 beta {
@@ -4512,14 +4517,14 @@ beta {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">// config file
+<pre class="CodeRay highlight"><code data-lang="config">// config file
 params.foo = 'Bonjour'
 params.bar = 'le monde!'</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">// workflow script
+<pre class="CodeRay highlight"><code data-lang="config">// workflow script
 params.foo = 'Hello'
 params.bar = 'world!'
 
@@ -4534,7 +4539,7 @@ println "$params.foo $params.bar"</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run params.nf</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run params.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4542,7 +4547,7 @@ println "$params.foo $params.bar"</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run params.nf --foo Hola</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run params.nf --foo Hola</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4558,7 +4563,7 @@ where the workflow tasks will be executed.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">env.ALPHA = 'some value'
+<pre class="CodeRay highlight"><code data-lang="config">env.ALPHA = 'some value'
 env.BETA = "$HOME/some/path"</code></pre>
 </div>
 </div>
@@ -4569,7 +4574,7 @@ env.BETA = "$HOME/some/path"</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   echo true
   '''
   env | egrep 'ALPHA|BETA'
@@ -4582,7 +4587,7 @@ env.BETA = "$HOME/some/path"</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run foo.nf -c my-env.config</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run foo.nf -c my-env.config</code></pre>
 </div>
 </div>
 </div>
@@ -4606,7 +4611,7 @@ in the Nextflow configuration file. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     cpus = 10
     memory = 8.GB
     container = 'biocontainers/bamtools:v2.4.0_cv3'
@@ -4679,7 +4684,7 @@ instead it should not be used when setting process directives in the workflow sc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     memory = { 4.GB * task.cpus }
 }</code></pre>
 </div>
@@ -4690,7 +4695,7 @@ the configuration file need to be expressed as a map object.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     pod = [env: 'FOO', value: '123']
 }</code></pre>
 </div>
@@ -4701,7 +4706,7 @@ be defined as a list object. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     pod = [ [env: 'FOO', value: '123'],
             [env: 'BAR', value: '456'] ]
 }</code></pre>
@@ -4714,7 +4719,7 @@ be defined as a list object. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.container = 'nextflow/rnaseq-nf'
+<pre class="CodeRay highlight"><code data-lang="config">process.container = 'nextflow/rnaseq-nf'
 docker.enabled = true</code></pre>
 </div>
 </div>
@@ -4732,7 +4737,7 @@ The use of the unique SHA256 image ID guarantees that the image content do not c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.container = 'nextflow/rnaseq-nf@sha256:aeacbd7ea1154f263cda972a96920fb228b2033544c2641476350b9317dab266'
+<pre class="CodeRay highlight"><code data-lang="config">process.container = 'nextflow/rnaseq-nf@sha256:aeacbd7ea1154f263cda972a96920fb228b2033544c2641476350b9317dab266'
 docker.enabled = true</code></pre>
 </div>
 </div>
@@ -4745,7 +4750,7 @@ Nextflow config file using the container directive:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.container = '/some/singularity/image.sif'
+<pre class="CodeRay highlight"><code data-lang="config">process.container = '/some/singularity/image.sif'
 singularity.enabled = true</code></pre>
 </div>
 </div>
@@ -4795,7 +4800,7 @@ when the Singularity execution is enabled. For example:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.container = 'nextflow/rnaseq-nf'
+<pre class="CodeRay highlight"><code data-lang="config">process.container = 'nextflow/rnaseq-nf'
 singularity.enabled = true</code></pre>
 </div>
 </div>
@@ -4812,7 +4817,7 @@ using the <code>-with-singularity</code> option or the <code>process.container</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run script7.nf</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run script7.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4827,7 +4832,7 @@ using the <code>-with-singularity</code> option or the <code>process.container</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.conda = "/home/ubuntu/miniconda2/envs/nf-tutorial"</code></pre>
+<pre class="CodeRay highlight"><code data-lang="config">process.conda = "/home/ubuntu/miniconda2/envs/nf-tutorial"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4864,7 +4869,7 @@ supported <a href="https://www.nextflow.io/docs/latest/executor.html">execution 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.executor = 'slurm'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="config">process.executor = 'slurm'</code></pre>
 </div>
 </div>
 </div>
@@ -4911,7 +4916,7 @@ supported <a href="https://www.nextflow.io/docs/latest/executor.html">execution 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     executor = 'slurm'
     queue = 'short'
     memory = '10 GB'
@@ -4928,7 +4933,7 @@ supported <a href="https://www.nextflow.io/docs/latest/executor.html">execution 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     executor = 'slurm'
     queue = 'short'
     memory = '10 GB'
@@ -4963,7 +4968,7 @@ supported <a href="https://www.nextflow.io/docs/latest/executor.html">execution 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process task1 {
+<pre class="CodeRay highlight"><code data-lang="config">process task1 {
   label 'long'
 
   """
@@ -4985,7 +4990,7 @@ process task2 {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     executor = 'slurm'
 
     withLabel: 'short' {
@@ -5010,7 +5015,7 @@ process task2 {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
   withName: foo {
     container = 'some/image:x'
   }
@@ -5050,7 +5055,7 @@ however when using many tools the image can become very big and tools can confli
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">profiles {
+<pre class="CodeRay highlight"><code data-lang="config">profiles {
 
     standard {
         params.genome = '/local/path/ref.fasta'
@@ -5083,7 +5088,7 @@ however when using many tools the image can become very big and tools can confli
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run &lt;your script&gt; -profile cluster</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run &lt;your script&gt; -profile cluster</code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -5100,7 +5105,7 @@ Two or more configuration profiles can be specified by separating the profile na
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">nextflow run &lt;your script&gt; -profile standard,cloud</code></pre>
+<pre class="CodeRay highlight"><code data-lang="config">nextflow run &lt;your script&gt; -profile standard,cloud</code></pre>
 </div>
 </div>
 </div>
@@ -5117,7 +5122,7 @@ Two or more configuration profiles can be specified by separating the profile na
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process.executor = 'awsbatch'      <i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="CodeRay highlight"><code data-lang="config">process.executor = 'awsbatch'      <i class="conum" data-value="1"></i><b>(1)</b>
 process.queue = 'cbcrg'      <i class="conum" data-value="2"></i><b>(2)</b>
 process.container = 'nextflow/rnaseq-nf:latest'        <i class="conum" data-value="3"></i><b>(3)</b>
 workDir = 's3://cbcrg/work/' <i class="conum" data-value="4"></i><b>(4)</b>
@@ -5155,7 +5160,7 @@ The best practices is to keep this setting as a separate profile in your workflo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run script7.nf</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run script7.nf</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5169,7 +5174,7 @@ The best practices is to keep this setting as a separate profile in your workflo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">aws {
+<pre class="CodeRay highlight"><code data-lang="config">aws {
   batch {
       volumes = '/some/path'
   }
@@ -5181,7 +5186,7 @@ The best practices is to keep this setting as a separate profile in your workflo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">aws {
+<pre class="CodeRay highlight"><code data-lang="config">aws {
   region = 'eu-west-1'
   batch {
       volumes = ['/tmp', '/host/path:/mnt/path:ro']
@@ -5216,7 +5221,7 @@ The best practices is to keep this setting as a separate profile in your workflo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     container = 'job-definition://your-job-definition-name'
 }</code></pre>
 </div>
@@ -5244,7 +5249,7 @@ When creating your custom AMI for AWS Batch, make sure to use the <em>Amazon ECS
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">sudo yum install -y bzip2 wget
+<pre class="CodeRay highlight"><code>sudo yum install -y bzip2 wget
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -f -p $HOME/miniconda
 $HOME/miniconda/bin/conda install -c conda-forge -y awscli
@@ -5268,7 +5273,7 @@ The <code>aws</code> tool will be placed in a directory named bin in the main in
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">aws.batch.cliPath = '/home/ec2-user/miniconda/bin/aws'</code></pre>
+<pre class="CodeRay highlight"><code data-lang="config">aws.batch.cliPath = '/home/ec2-user/miniconda/bin/aws'</code></pre>
 </div>
 </div>
 </div>
@@ -5282,7 +5287,7 @@ The <code>aws</code> tool will be placed in a directory named bin in the main in
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">MIME-Version: 1.0
+<pre class="CodeRay highlight"><code>MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="//"
 
 --//
@@ -5323,7 +5328,7 @@ only to a subset of processes in your workflow. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">process {
+<pre class="CodeRay highlight"><code data-lang="config">process {
     executor = 'slurm' <i class="conum" data-value="1"></i><b>(1)</b>
     queue = 'short'    <i class="conum" data-value="2"></i><b>(2)</b>
 
@@ -5388,7 +5393,7 @@ aws {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">work/
+<pre class="CodeRay highlight"><code>work/
 ├── 12
 │   └── 1adacb582d2198cd32db0e6f808bce
 │       ├── genome.fa -&gt; /data/../genome.fa
@@ -5431,7 +5436,7 @@ aws {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run &lt;script&gt; -resume</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run &lt;script&gt; -resume</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5457,7 +5462,7 @@ aws {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run &lt;script&gt; -w /some/scratch/dir</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run &lt;script&gt; -w /some/scratch/dir</code></pre>
 </div>
 </div>
 <div class="admonitionblock warning">
@@ -5503,7 +5508,7 @@ in the same directory concurrently.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">$ nextflow log
+<pre class="CodeRay highlight"><code data-lang="config">$ nextflow log
 TIMESTAMP          	DURATION	RUN NAME             	STATUS	REVISION ID	SESSION ID                          	COMMAND
 2020-11-10 22:32:33	1.6s    	friendly_raman       	OK    	96eb04d6a4 	2b90bac5-5124-4933-a345-afb28ca4b184	nextflow run hello
 2020-11-10 22:35:39	33s     	condescending_fourier	OK    	708cf52a33 	a8d1ece2-a6cb-493f-b54e-dac7266d2669	nextflow run rnaseq-nf -with-docker
@@ -5516,7 +5521,7 @@ TIMESTAMP          	DURATION	RUN NAME             	STATUS	REVISION ID	SESSION ID
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow run rnaseq-nf -resume condescending_fourier -with-docker</code></pre>
+<pre class="CodeRay highlight"><code>nextflow run rnaseq-nf -resume condescending_fourier -with-docker</code></pre>
 </div>
 </div>
 </div>
@@ -5531,7 +5536,7 @@ provenance report.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">$ nextflow log condescending_fourier
+<pre class="CodeRay highlight"><code>$ nextflow log condescending_fourier
 
 /data/.../work/e0/3192ad7ddc661e3054de66572cf6f9
 /data/.../work/08/e7f13a32ccc0b2b1fe0c00bce4bd14
@@ -5546,7 +5551,7 @@ provenance report.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">$ nextflow log condescending_fourier -f 'process,exit,hash,duration'
+<pre class="CodeRay highlight"><code>$ nextflow log condescending_fourier -f 'process,exit,hash,duration'
 
 RNASEQ:FASTQC	0	e0/3192ad	21.2s
 RNASEQ:FASTQC	0	08/e7f13a	21.1s
@@ -5561,7 +5566,7 @@ MULTIQC	0	a9/784d05	10s</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow log -l</code></pre>
+<pre class="CodeRay highlight"><code>nextflow log -l</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5569,7 +5574,7 @@ MULTIQC	0	a9/784d05	10s</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">$ nextflow log condescending_fourier -F 'process =~ /RNASEQ:FASTQC/'
+<pre class="CodeRay highlight"><code>$ nextflow log condescending_fourier -F 'process =~ /RNASEQ:FASTQC/'
 
 /data/.../work/e0/3192ad7ddc661e3054de66572cf6f9
 /data/.../work/08/e7f13a32ccc0b2b1fe0c00bce4bd14</code></pre>
@@ -5583,7 +5588,7 @@ MULTIQC	0	a9/784d05	10s</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="html" class="language-html hljs">&lt;div&gt;
+<pre class="CodeRay highlight"><code data-lang="html">&lt;div&gt;
 &lt;h2&gt;${name}&lt;/h2&gt;
 &lt;div&gt;
 Script:
@@ -5604,7 +5609,7 @@ Script:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">nextflow log condescending_fourier -t template.html &gt; prov.html</code></pre>
+<pre class="CodeRay highlight"><code>nextflow log condescending_fourier -t template.html &gt; prov.html</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5637,7 +5642,7 @@ problem use the <a href="https://www.nextflow.io/docs/latest/process.html#cache"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from(1,2,3)
     .map { it -&gt; X=it; X+=2 }
     .view { "ch1 = $it" }
@@ -5657,7 +5662,7 @@ in parallel, the <code>X</code> value can be overwritten by the other <code>map<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">Channel
+<pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from(1,2,3)
     .map { it -&gt; def X=it; X+=2 }
     .println { "ch1 = $it" }
@@ -5680,7 +5685,7 @@ Channel
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   input: set val(pair), file(reads) from ...
   output: set val(pair), file('*.bam') into bam_ch
   """
@@ -5716,7 +5721,7 @@ approach. The third process should be written as:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">...
+<pre class="CodeRay highlight"><code data-lang="nextflow">...
 
 process gather {
   input:
@@ -5740,7 +5745,7 @@ process gather {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">ERROR ~ Error executing process &gt; 'index'
+<pre class="CodeRay highlight"><code>ERROR ~ Error executing process &gt; 'index'
 
 Caused by:          <i class="conum" data-value="1"></i><b>(1)</b>
   Process `index` terminated with an error exit status (127)
@@ -5851,7 +5856,7 @@ executed by the subsystem (eg. the batch scheduler). If the <code>.command.begin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   errorStrategy 'ignore'
   script:
   """
@@ -5868,7 +5873,7 @@ executed by the subsystem (eg. the batch scheduler). If the <code>.command.begin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="config" class="language-config hljs">nextflow run rnaseq-nf</code></pre>
+<pre class="CodeRay highlight"><code data-lang="config">nextflow run rnaseq-nf</code></pre>
 </div>
 </div>
 </div>
@@ -5879,7 +5884,7 @@ executed by the subsystem (eg. the batch scheduler). If the <code>.command.begin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   errorStrategy 'retry'
   script:
   """
@@ -5902,7 +5907,7 @@ executed by the subsystem (eg. the batch scheduler). If the <code>.command.begin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   errorStrategy { sleep(Math.pow(2, task.attempt) * 200 as long); return 'retry' }
   maxRetries 5
   script:
@@ -5923,7 +5928,7 @@ executed by the subsystem (eg. the batch scheduler). If the <code>.command.begin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code data-lang="nextflow" class="language-nextflow hljs">process foo {
+<pre class="CodeRay highlight"><code data-lang="nextflow">process foo {
   cpus 4
   memory { 2.GB * task.attempt }  <i class="conum" data-value="1"></i><b>(1)</b>
   time { 1.hour * task.attempt }  <i class="conum" data-value="2"></i><b>(2)</b>
@@ -5961,9 +5966,6 @@ executed by the subsystem (eg. the batch scheduler). If the <code>.command.begin
 </div>
 </div>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-<script>hljs.initHighlighting()</script>
 <div id="footer">
     <div id="footer-text">
         Creative Commons CC BY-NC-ND (Attribution-NonCommercial-ShareAlike-NoDerivatives) <span class="image right CC BY-NC-ND"><img src="assets/by-nc-nd.png" alt="CC BY-NC-ND" height="30" width="120"></span>
