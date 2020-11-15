@@ -86,7 +86,7 @@ Therefore just *touching* a file will invalidated the related task execution.
 
 == How to organize in silico experiments
 
-It’s a good practice to organize each each *experiment* in its own folder. The experiment main input parameters should be specified using a Nextflow config file. 
+It’s a good practice to organize each *experiment* in its own folder. The experiment main input parameters should be specified using a Nextflow config file. 
 This makes simply to track and replicate the experiment over time.
 
 Note that in the same experiment the same pipeline can be executed multiple times, however it should be avoided to launch two (or more) Nextflow instances 

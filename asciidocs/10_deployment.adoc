@@ -270,7 +270,7 @@ aws {
 
 IMPORTANT:
 
-* This a global configuration that has to be specified in a Nextflow config file, as such it’s applied to *all* process executions.
+* This is a global configuration that has to be specified in a Nextflow config file, as such it’s applied to *all* process executions.
 
 * Nextflow expects those paths to be available. It does not handle the provision of EBS volumes or other kind of storage.
 
