@@ -12,7 +12,7 @@ Online workshop.
 
 ## Talks
 
-### Introduction to Nextflow
+* ### Introduction to Nextflow
 
 **Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
 
