@@ -10,21 +10,36 @@ The workshop will include a Nextflow training and hackathon, Keynote speakers, a
 
 Online workshop.
 
-## Confirmed speakers
+## Talks
 
-* Paolo di Tommaso - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/),
-Barcelona, Spain.
+### Introduction to Nextflow
 
-* Evan Floden - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
+**Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
 
-* Phil Ewels - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
+### Introduction to nf-core
+
+**Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
 Sweden.
 
-* Harshil Patel - nf-core core team, Senior Bioinformatician of  the Bioinformatics and Biostatistics Facility at the
+### Running nf-core pipelines + Contributing to nf-core (tutorial)
+
+**Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
+Sweden.
+
+### Featured nf-core pipelines
+
+**Harshil Patel** - nf-core core team, Senior Bioinformatician of  the Bioinformatics and Biostatistics Facility at the
 [Francis Crick Institute](https://www.crick.ac.uk/), UK.
  
-* Luca Cozzuto - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
+### Master of Pores: "A nanopore processing pipeline"
+
+**Luca Cozzuto** - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
 [Centre for Genomic Regulation](https://www.crg.eu/), Spain. 
+
+### Introduction to DSL2
+
+**Paolo di Tommaso** - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/),
+Barcelona, Spain.
  
 ## Flash talks selected from participants abstracts
 
