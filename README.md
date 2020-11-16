@@ -12,6 +12,8 @@ Online workshop.
 
 ## Talks
 
+Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for any person interested in the community. Questions can be posted on Zoom, Youtube comments or in the dedicated Slack channel [#workshop-nov-2020-talks](https://bovreg.slack.com/channel/workshop-nov-2020-talks).
+
 * ### Introduction to Nextflow
 
     **Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
@@ -43,7 +45,14 @@ Barcelona, Spain.
  
 ## Flash talks selected from participants abstracts
 
+Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for the general public. Questions can be posted on Zoom, Youtube comments or in the dedicated Slack channel [#workshop-nov-2020-flash-talks](https://bovreg.slack.com/channel/workshop-nov-2020-flash-talks).
+
 Find the presentation abstracts at [this link](abstracts.md).
+
+## Nextflow training
+
+**Note:** *Nextflow training places are limited. Only participants that received the confirmation email can attend.*
+
 
 ## Hackathon projects:
 
@@ -86,9 +95,7 @@ The hackathon is organized in projects that have been proposed by attendees and 
 
 ## Registration
 
-Registration is closed. Should you have registered you will receive a confirmation email soon.
-
-**Note:** *Nextflow training places will be limited to a maximum of 30 attendees.*
+Registration is closed.
 
 ## Poster
 
