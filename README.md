@@ -12,15 +12,15 @@ Online workshop.
 
 ## Interesting links
 
-* Live streams on [Bovreg YouTube Channel](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/)
+* Live streams on [BovReg YouTube Channel](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/)
 * Use the [BovReg Slack organization](https://join.slack.com/t/bovreg/shared_invite/zt-ior2kx7r-nU04LE3B2RuhTn5ModJJog) for discussion and collaboration.
 * Follow us on [Twitter](https://twitter.com/BovReg) and stay tunned during the event and beyond.
 
-**Note:** *If you are a registered participant you should have received the corresponding Zoom links for the different sessions were you have been accepted.*
+**Note:** *If you are a registered participant you should have received the corresponding Zoom links for the different sessions where you have been accepted.*
 
 ## Talks
 
-Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for any other person interested. Questions can be posted on Zoom or in the dedicated Slack channel [#workshop-nov-2020-talks](https://bovreg.slack.com/channels/workshop-nov-2020-talks).
+Talks will be streamed on Zoom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for any other person interested. Questions can be posted on Zoom or in the dedicated Slack channel [#workshop-nov-2020-talks](https://bovreg.slack.com/channels/workshop-nov-2020-talks).
 
 * ### Introduction to Nextflow
 
