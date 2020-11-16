@@ -61,6 +61,9 @@ Find the presentation abstracts at [this link](abstracts.md).
 
 **Note:** *Nextflow training places are limited. Only participants that received the confirmation email can attend.*
 
+Nextflow training will take place during mornings. If you have been accepted in the training session, you should have received the information of how to attend before the first session. 
+
+The slack channel for the training is [#workshop-nov-2020-training](https://bovreg.slack.com/channels/workshop-nov-2020-training).
 
 ## Hackathon projects:
 
