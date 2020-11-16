@@ -14,31 +14,31 @@ Online workshop.
 
 * ### Introduction to Nextflow
 
-**Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
+    **Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
 
-### Introduction to nf-core
+* ### Introduction to nf-core
 
-**Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
+    **Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
 Sweden.
 
-### Running nf-core pipelines + Contributing to nf-core (tutorial)
+* ### Running nf-core pipelines + Contributing to nf-core (tutorial)
 
-**Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
+    **Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
 Sweden.
 
-### Featured nf-core pipelines
+* ### Featured nf-core pipelines
 
-**Harshil Patel** - nf-core core team, Senior Bioinformatician of  the Bioinformatics and Biostatistics Facility at the
+    **Harshil Patel** - nf-core core team, Senior Bioinformatician of  the Bioinformatics and Biostatistics Facility at the
 [Francis Crick Institute](https://www.crick.ac.uk/), UK.
  
-### Master of Pores: "A nanopore processing pipeline"
+* ### Master of Pores: "A nanopore processing pipeline"
 
-**Luca Cozzuto** - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
+    **Luca Cozzuto** - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
 [Centre for Genomic Regulation](https://www.crg.eu/), Spain. 
 
-### Introduction to DSL2
+* ### Introduction to DSL2
 
-**Paolo di Tommaso** - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/),
+    **Paolo di Tommaso** - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/),
 Barcelona, Spain.
  
 ## Flash talks selected from participants abstracts
