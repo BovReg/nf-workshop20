@@ -10,6 +10,14 @@ The workshop will include a Nextflow training and hackathon, Keynote speakers, a
 
 Online workshop.
 
+## Interesting links
+
+* Live streams on [Bovreg YouTube Channel](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/)
+* Use the [BovReg Slack organization](https://join.slack.com/t/bovreg/shared_invite/zt-ior2kx7r-nU04LE3B2RuhTn5ModJJog) for discussion and collaboration.
+* Follow us on [Twitter](https://twitter.com/BovReg) and stay tunned during the event and beyond.
+
+**Note:**: *If you are a registered participant you should have received the corresponding Zoom links for the different sessions were you are registered.
+
 ## Talks
 
 Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for any other person interested. Questions can be posted on Zoom or in the dedicated Slack channel [#workshop-nov-2020-talks](https://bovreg.slack.com/channel/workshop-nov-2020-talks).
@@ -54,10 +62,11 @@ Find the presentation abstracts at [this link](abstracts.md).
 **Note:** *Nextflow training places are limited. Only participants that received the confirmation email can attend.*
 
 
-
 ## Hackathon projects:
 
-The hackathon is organized in projects that have been proposed by attendees and selected by the organization. However, we would like the hacakthon to be dynamic and self-organized so feel free to work in more than one project and do not restrict to your first option. The selected hackathon projects have its own Slack channel allowing all the project participants to communicate. Also, we propose that the different projects make a presentation of the advances achieved on the previous day using HackMD slides (see below) at the starting of each day hackathon session.
+The hackathon is free and open to everybody. However, to help us organize the event we ask you to register [here](https://docs.google.com/forms/d/e/1FAIpQLSdITmduOynEIZ6kox1VOh_d5sQgeqlZtx4uVD6S4yk7aCupwQ/viewform). Note, that in case you are interested you can propose your own hackathon project. This will require that you lead the project and pitch one slide during the hackathon introduction session (Tuesday, 14:30-15:00) explaining which is the objective/idea of your project. You can use the same registration form to provide us with this information. In any case, there are already several projects proposed by registered participants. Take a look at the Hackathon projects section here to see the already proposed ideas.
+
+We would like the hacakthon to be dynamic and self-organized so feel free to work in more than one project and do not restrict to your first option. The selected hackathon projects have its own Slack channel allowing all the project participants to communicate. Also, we propose that the different projects make a presentation of the advances achieved on the previous day using HackMD slides (see below) at the starting of each day hackathon session.
 
 ### Project 1 - From Snakemake to Nextflow
 
