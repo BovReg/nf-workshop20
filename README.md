@@ -12,7 +12,7 @@ Online workshop.
 
 ## Talks
 
-Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for any person interested in the community. Questions can be posted on Zoom, Youtube comments or in the dedicated Slack channel [#workshop-nov-2020-talks](https://bovreg.slack.com/channel/workshop-nov-2020-talks).
+Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for any other person interested. Questions can be posted on Zoom or in the dedicated Slack channel [#workshop-nov-2020-talks](https://bovreg.slack.com/channel/workshop-nov-2020-talks).
 
 * ### Introduction to Nextflow
 
@@ -54,33 +54,34 @@ Find the presentation abstracts at [this link](abstracts.md).
 **Note:** *Nextflow training places are limited. Only participants that received the confirmation email can attend.*
 
 
+
 ## Hackathon projects:
 
 The hackathon is organized in projects that have been proposed by attendees and selected by the organization. However, we would like the hacakthon to be dynamic and self-organized so feel free to work in more than one project and do not restrict to your first option. The selected hackathon projects have its own Slack channel allowing all the project participants to communicate. Also, we propose that the different projects make a presentation of the advances achieved on the previous day using HackMD slides (see below) at the starting of each day hackathon session.
 
 ### Project 1 - From Snakemake to Nextflow
 
-* Slack channel: [#hackathon-nov-2020-pr1-snakemake-nextflow](https://bovreg.slack.com/channel/hackathon-nov-2020-pr1-snakemake-nextflow)
+* Slack channel: [#hackathon-nov-2020-pr1-snakemake-nextflow](https://bovreg.slack.com/channels/hackathon-nov-2020-pr1-snakemake-nextflow)
 * Slides on HackMD: [Edit](https://hackmd.io/CnblMzNlQwKIesMb9_or5Q), [view](https://hackmd.io/@Hackathon-November-2020/B1HgcJk5v)
 
 ### Project 2: WGS data analysis pipeline
 
-* Slack channel: [#hackathon-nov-2020-pr2-wgs-pipeline](https://bovreg.slack.com/channel/hackathon-nov-2020-pr2-wgs-pipeline)
+* Slack channel: [#hackathon-nov-2020-pr2-wgs-pipeline](https://bovreg.slack.com/channels/hackathon-nov-2020-pr2-wgs-pipeline)
 * Slides on HackMD: [Edit](https://hackmd.io/1N8PZ6QdTRyWGLh2-CnEjg), [view](https://hackmd.io/@Hackathon-November-2020/BkH3HM19P)
 
 ### Project 3: eQTLs analysis
 
-* Slack channel: [#hackathon-nov-2020-pr3-eqtls](https://bovreg.slack.com/channel/hackathon-nov-2020-pr3-eqtls)
+* Slack channel: [#hackathon-nov-2020-pr3-eqtls](https://bovreg.slack.com/channels/hackathon-nov-2020-pr3-eqtls)
 * Slides on HackMD: [Edit](https://hackmd.io/22iAX2a8R36KogOZXWMINg), [view](https://hackmd.io/@Hackathon-November-2020/SywnLG1qw)
 
 ### Project 4: RNA-seq analysis pipeline
 
-* Slack channel: [#hackathon-nov-2020-pr4-rnaseq-pipeline](https://bovreg.slack.com/channel/hackathon-nov-2020-pr4-rnaseq-pipeline)
+* Slack channel: [#hackathon-nov-2020-pr4-rnaseq-pipeline](https://bovreg.slack.com/channels/hackathon-nov-2020-pr4-rnaseq-pipeline)
 * Slides on HackMD: [Edit](https://hackmd.io/YVJ4SNcRScCZEKfXlzHh3A), [view](https://hackmd.io/@Hackathon-November-2020/Hykb_fkcD)
 
 ### Project 5: Fitness traits analysis pipeline
 
-* Slack channel: [#hackathon-nov-2020-pr5-fitness-pipelines](https://bovreg.slack.com/channel/hackathon-nov-2020-pr5-fitness-pipelines) 
+* Slack channel: [#hackathon-nov-2020-pr5-fitness-pipelines](https://bovreg.slack.com/channels/hackathon-nov-2020-pr5-fitness-pipelines) 
 * Slides on HackMD: [Edit](https://hackmd.io/otiEN7ZkRIKQQP8QtsQZDA), [view](https://hackmd.io/@Hackathon-November-2020/S1qjszy9P)
 
 ### Project 6: Environmental effect prediction by omics data integration
