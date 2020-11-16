@@ -32,7 +32,7 @@ Find the presentation abstracts at [this link](abstracts.md).
 
 ## Hackathon projects:
 
-The hackathon is organized in projects that have been proposed by attendees and selected by the organization. However, we would like the hacakthon to be dynamic and self-organized so feel free to work in any other project. The selected projects will have its own Slack channel allowing all the project participants to communicate. We propose that each day at the beginning of the hackathon session the different projects make a presentation of the advances achieved on the previous day using HackMD slides (see below).
+The hackathon is organized in projects that have been proposed by attendees and selected by the organization. However, we would like the hacakthon to be dynamic and self-organized so feel free to work in more than one project and do not restrict to your first option. The selected hackathon projects have its own Slack channel allowing all the project participants to communicate. Also, we propose that the different projects make a presentation of the advances achieved on the previous day using HackMD slides (see below) at the starting of each day hackathon session.
 
 ### Project 1 - From Snakemake to Nextflow
 
