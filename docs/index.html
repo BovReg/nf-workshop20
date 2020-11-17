@@ -1922,7 +1922,7 @@ uses the same <code>data/ggal/transcriptome.fa</code> in each execution.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="nextflow">sequences = Channel.fromPath('*.fa')
+<pre class="CodeRay highlight"><code data-lang="nextflow">sequences = Channel.fromPath('data/prots/*.tfa')
 methods = ['regular', 'expresso', 'psicoffee']
 
 process alignSequences {
