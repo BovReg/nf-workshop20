@@ -2127,12 +2127,14 @@ following by the definition of each tuple element in the tuple.</p>
 
 process foo {
   input:
-    set val(sample_id), file(sample_files) from reads_ch
+  set val(sample_id), file(sample_files) from reads_ch
+
   output:
-    set val(sample_id), file('sample.bam') into bam_ch
+  set val(sample_id), file('sample.bam') into bam_ch
+
   script:
   """
-    your_command_here --reads $sample_id &gt; sample.bam
+  your_command_here --reads $sample_id &gt; sample.bam
   """
 }
 
