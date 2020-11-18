@@ -75,11 +75,13 @@ We would like the hacakthon to be dynamic and self-organized so feel free to wor
 
 * Slack channel: [#hackathon-nov-2020-pr1-snakemake-nextflow](https://bovreg.slack.com/channels/hackathon-nov-2020-pr1-snakemake-nextflow)
 * Slides on HackMD: [Edit](https://hackmd.io/CnblMzNlQwKIesMb9_or5Q), [view](https://hackmd.io/@Hackathon-November-2020/B1HgcJk5v)
+* Link to the fork of the [GitHub project repository](https://github.com/BovReg/hackathon-nov-2020-pr1-snakemake-nextflow) on BovReg
 
 ### Project 2: WGS data analysis pipeline
 
 * Slack channel: [#hackathon-nov-2020-pr2-wgs-pipeline](https://bovreg.slack.com/channels/hackathon-nov-2020-pr2-wgs-pipeline)
 * Slides on HackMD: [Edit](https://hackmd.io/1N8PZ6QdTRyWGLh2-CnEjg), [view](https://hackmd.io/@Hackathon-November-2020/BkH3HM19P)
+* Link to the fork of the [GitHub project repository](https://github.com/BovReg/hackathon-nov-2020-pr2-wgs-pipeline) on BovReg
 
 ### Project 3: eQTLs analysis
 
@@ -105,10 +107,7 @@ We would like the hacakthon to be dynamic and self-organized so feel free to wor
 
 * Slack channel: [#hackathon-nov-2020-pr7-bacterial-dna-pipeline](https://bovreg.slack.com/channels/hackathon-nov-2020-pr7-bacterial-dna-pipeline)
 * Slides on HackMD: [Edit](https://hackmd.io/GDIhxvPTQvaZX4zF0IM7Uw), [view](https://hackmd.io/@Hackathon-November-2020/HJzJqzyqD)
-
-## Registration
-
-Registration is closed.
+* Link to the fork of the [GitHub project repository](https://github.com/BovReg/hackathon-nov-2020-pr7-bacterial-dna-pipeline) on BovReg
 
 ## Poster
 
