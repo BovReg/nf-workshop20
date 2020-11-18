@@ -2462,7 +2462,7 @@ baz</code></pre>
 <pre class="CodeRay highlight"><code data-lang="nextflow">Channel
     .from( 'hello', 'world' )
     .map { word -&gt; [word, word.size()] }
-    .println { word, len -&gt; "$word contains $len letters" }</code></pre>
+    .view { word, len -&gt; "$word contains $len letters" }</code></pre>
 </div>
 </div>
 <div class="sect4">
