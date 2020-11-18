@@ -2085,18 +2085,22 @@ For example::</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="nextflow">process align {
+<pre class="CodeRay highlight"><code data-lang="nextflow">sample_ch = Channel.from ('human', 'mouse')
+
+process align {
+
   input:
-  val x from species
-  file seq from sequences
+  val x from sample_ch
 
   output:
-  file "${x}.aln" into genomes
+  file "${x}.txt" into sample_files_ch
 
   """
-  t_coffee -in $seq &gt; ${x}.aln
+  touch ${x}.txt
   """
-}</code></pre>
+}
+
+sample_files_ch.view()</code></pre>
 </div>
 </div>
 <div class="paragraph">
