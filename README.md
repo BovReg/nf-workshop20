@@ -83,25 +83,11 @@ We would like the hacakthon to be dynamic and self-organized so feel free to wor
 * Slides on HackMD: [Edit](https://hackmd.io/1N8PZ6QdTRyWGLh2-CnEjg), [view](https://hackmd.io/@Hackathon-November-2020/BkH3HM19P)
 * Link to the fork of the [GitHub project repository](https://github.com/BovReg/hackathon-nov-2020-pr2-wgs-pipeline) on BovReg
 
-### Project 3: eQTLs analysis
-
-* Slack channel: [#hackathon-nov-2020-pr3-eqtls](https://bovreg.slack.com/channels/hackathon-nov-2020-pr3-eqtls)
-* Slides on HackMD: [Edit](https://hackmd.io/22iAX2a8R36KogOZXWMINg), [view](https://hackmd.io/@Hackathon-November-2020/SywnLG1qw)
-
 ### Project 4: RNA-seq analysis pipeline
 
 * Slack channel: [#hackathon-nov-2020-pr4-rnaseq-pipeline](https://bovreg.slack.com/channels/hackathon-nov-2020-pr4-rnaseq-pipeline)
 * Slides on HackMD: [Edit](https://hackmd.io/YVJ4SNcRScCZEKfXlzHh3A), [view](https://hackmd.io/@Hackathon-November-2020/Hykb_fkcD)
-
-### Project 5: Fitness traits analysis pipeline
-
-* Slack channel: [#hackathon-nov-2020-pr5-fitness-pipelines](https://bovreg.slack.com/channels/hackathon-nov-2020-pr5-fitness-pipelines) 
-* Slides on HackMD: [Edit](https://hackmd.io/otiEN7ZkRIKQQP8QtsQZDA), [view](https://hackmd.io/@Hackathon-November-2020/S1qjszy9P)
-
-### Project 6: Environmental effect prediction by omics data integration
-
-* Slack channel: [#hackathon-nov-2020-pr6-environmental-effect-omics](https://bovreg.slack.com/channels/hackathon-nov-2020-pr6-environmental-effect-omics)
-* Slides on HackMD: [Edit](https://hackmd.io/w28jZ1wtSSa09ZLPCber6A), [view](https://hackmd.io/@Hackathon-November-2020/H1uGTGkqw)
+* Link to the fork of the [GitHub project repository](https://github.com/friederhadlich/nextflow_ultraLowInput) on BovReg
 
 ### Project 7: Bacterial DNA analysis pipeline
 
