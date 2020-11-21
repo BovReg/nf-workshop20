@@ -18,14 +18,9 @@
 <li><a href="#_setup">1. Setup</a>
 <ul class="sectlevel2">
 <li><a href="#_requirements">1.1. Requirements</a></li>
-<li><a href="#_launch_the_cloud_environment">1.2. Launch the cloud environment</a>
-<ul class="sectlevel3">
-<li><a href="#_steps_to_launch_the_aws_9_cloud_environment">1.2.1. Steps to launch the AWS 9 cloud environment</a></li>
-</ul>
-</li>
-<li><a href="#_training_materials_download">1.3. Training materials download</a></li>
-<li><a href="#_environment_setup">1.4. Environment setup</a></li>
-<li><a href="#_nextflow_installation">1.5. Nextflow Installation</a></li>
+<li><a href="#_training_materials_download">1.2. Training materials download</a></li>
+<li><a href="#_environment_setup">1.3. Environment setup</a></li>
+<li><a href="#_nextflow_installation">1.4. Nextflow Installation</a></li>
 </ul>
 </li>
 <li><a href="#_get_started_with_nextflow">2. Get started with Nextflow</a>
@@ -337,159 +332,7 @@ It requires Bash and
 </div>
 </div>
 <div class="sect2">
-<h3 id="_launch_the_cloud_environment">1.2. Launch the cloud environment</h3>
-<div class="paragraph">
-<p>For this tutorial, we will use the <a href="https://aws.amazon.com/es/cloud9/">AWS Cloud 9</a> virtual environment.</p>
-</div>
-<div class="paragraph">
-<p>To launch the environment, you just need to sign in the AWS console with the <a href="https://www.crg.eu/en/cedric_notredame">CBCRG</a> account and specify
-your (first) name as the IAM user. Below we included the list with all the users name created:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Acloque</p>
-</li>
-<li>
-<p>Akshatha</p>
-</li>
-<li>
-<p>Alessio</p>
-</li>
-<li>
-<p>Andreia</p>
-</li>
-<li>
-<p>Bala-Kiran</p>
-</li>
-<li>
-<p>Bardou</p>
-</li>
-<li>
-<p>Bjoern</p>
-</li>
-<li>
-<p>Bouabid</p>
-</li>
-<li>
-<p>Brenda-Murdoch</p>
-</li>
-<li>
-<p>Cervin</p>
-</li>
-<li>
-<p>Christiana</p>
-</li>
-<li>
-<p>Daniel</p>
-</li>
-<li>
-<p>Frieder</p>
-</li>
-<li>
-<p>Gabriel</p>
-</li>
-<li>
-<p>Jani</p>
-</li>
-<li>
-<p>Joana</p>
-</li>
-<li>
-<p>Jos</p>
-</li>
-<li>
-<p>Juan-Andres</p>
-</li>
-<li>
-<p>Juliana-Menezes</p>
-</li>
-<li>
-<p>Klopp</p>
-</li>
-<li>
-<p>Kylie-Munyard</p>
-</li>
-<li>
-<p>Laide-Abbas</p>
-</li>
-<li>
-<p>Lucio</p>
-</li>
-<li>
-<p>Maria</p>
-</li>
-<li>
-<p>Mathieu</p>
-</li>
-<li>
-<p>Meenu</p>
-</li>
-<li>
-<p>Mohammad-Hossein</p>
-</li>
-<li>
-<p>Pedro</p>
-</li>
-<li>
-<p>Phanindra-Balaji</p>
-</li>
-<li>
-<p>Praveen-Krishna</p>
-</li>
-<li>
-<p>Sarah</p>
-</li>
-<li>
-<p>Siddharth-Jayaraman</p>
-</li>
-<li>
-<p>Sylvain</p>
-</li>
-<li>
-<p>Tuan</p>
-</li>
-<li>
-<p>Wellison-Jarles</p>
-</li>
-<li>
-<p>Yu</p>
-</li>
-</ul>
-</div>
-<div class="sect3">
-<h4 id="_steps_to_launch_the_aws_9_cloud_environment">1.2.1. Steps to launch the AWS 9 cloud environment</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Open this address on your browser: <a href="https://eu-west-1.console.aws.amazon.com/cloud9/home">eu-west-1.console.aws.amazon.com/cloud9/home</a></p>
-</li>
-<li>
-<p>Once you are in the AWS login page, select <strong>IAM USER</strong> and please fill the credentials below:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Account ID: <strong>885800555707</strong></p>
-</li>
-<li>
-<p>IAM user name: (your username as listed above)</p>
-</li>
-<li>
-<p>password: provided by the organization</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>When you access the AWS Cloud main page you will find your environment listed in the home page, just click on the <strong>Open IDE</strong> button and
-your environment will be launched.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_training_materials_download">1.3. Training materials download</h3>
+<h3 id="_training_materials_download">1.2. Training materials download</h3>
 <div class="paragraph">
 <p>Once you <a href="#Steps-to-launch-the-AWS-9-cloud-environment">launched the environment</a>, download the training materials running the command below
 on the terminal window that you will find at the botton of the page:</p>
@@ -532,7 +375,7 @@ alsodownload all the materials using <code>curl</code>:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_environment_setup">1.4. Environment setup</h3>
+<h3 id="_environment_setup">1.3. Environment setup</h3>
 <div class="paragraph">
 <p>To complete the environment setup you just need to run the script below, which installs Java an other requirements for this tutorial.</p>
 </div>
@@ -543,7 +386,7 @@ alsodownload all the materials using <code>curl</code>:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_nextflow_installation">1.5. Nextflow Installation</h3>
+<h3 id="_nextflow_installation">1.4. Nextflow Installation</h3>
 <div class="paragraph">
 <p>Install the latest version of Nextflow copy &amp; pasting the following snippet in a terminal window:</p>
 </div>
