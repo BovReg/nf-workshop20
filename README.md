@@ -67,12 +67,12 @@ Talks will be streamed on Zooom for registered participants and in [Youtube](htt
 
 Find the presentation abstracts at [this link](abstracts.md).
 
-Find all the flash talk sessions on the following links:
+Find all the flash talk sessions recorded on the following links:
 
-    * [Day 1](https://youtu.be/VkqNYzV2LDg?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
-    * [Day 2](https://youtu.be/wv_ejOTcStg?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
-    * [Day 3](https://youtu.be/1A5Q1WiaKno?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
-    * [Day 4](https://youtu.be/kwt0Ox-yTEE?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+* [Day 1](https://youtu.be/VkqNYzV2LDg?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+* [Day 2](https://youtu.be/wv_ejOTcStg?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+* [Day 3](https://youtu.be/1A5Q1WiaKno?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+* [Day 4](https://youtu.be/kwt0Ox-yTEE?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
 
 ## Nextflow training
 
