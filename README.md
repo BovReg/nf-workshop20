@@ -26,36 +26,53 @@ Talks will be streamed on Zoom for registered participants and in [Youtube](http
 
     **Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
 
+    Watcht it [here](https://youtu.be/EjyMzdoCgjQ?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
+
 * ### Introduction to nf-core
 
-    **Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
-Sweden.
+    **Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/), Sweden.
+
+    Watch it [here](https://youtu.be/-GcuxoIpfOc?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
 
 * ### Running nf-core pipelines + Contributing to nf-core (tutorial)
 
     **Phil Ewels** - nf-core core team, Head of Genomics Applications Development at [SciLifeLab](https://www.scilifelab.se/),
 Sweden.
 
+    Watch it [here](https://youtu.be/lUJ1L-qDeXM?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
+
 * ### Featured nf-core pipelines
 
     **Harshil Patel** - nf-core core team, Senior Bioinformatician of  the Bioinformatics and Biostatistics Facility at the
 [Francis Crick Institute](https://www.crick.ac.uk/), UK.
- 
+    
+    Watch it [here](https://youtu.be/hCGuF9bA9ho?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
+
 * ### Master of Pores: "A nanopore processing pipeline"
 
     **Luca Cozzuto** - NGS data analysis Coordinator of CRG Bioinformatics Core  at the
 [Centre for Genomic Regulation](https://www.crg.eu/), Spain. 
 
+    Watch it [here](https://youtu.be/fG1PhU6mMxA?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
+    
 * ### Introduction to DSL2
 
-    **Paolo di Tommaso** - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/),
-Barcelona, Spain.
+    **Paolo di Tommaso** - Creator and project leader of Nextflow and CTO & Co-founder of [Seqera Labs](https://www.seqera.io/), Barcelona, Spain.
  
+    Watch it [here](https://youtu.be/-Ne4OP0aiYw?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
+
 ## Flash talks selected from participants abstracts
 
 Talks will be streamed on Zooom for registered participants and in [Youtube](https://www.youtube.com/channel/UC0qhdZc9pDT_6dEk3qDUvcA/) for the general public. Questions can be posted on Zoom, Youtube comments or in the dedicated Slack channel [#workshop-nov-2020-flash-talks](https://bovreg.slack.com/channels/workshop-nov-2020-flash-talks).
 
 Find the presentation abstracts at [this link](abstracts.md).
+
+Find all the flash talk sessions on the following links:
+
+    * [Day 1](https://youtu.be/VkqNYzV2LDg?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+    * [Day 2](https://youtu.be/wv_ejOTcStg?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+    * [Day 3](https://youtu.be/1A5Q1WiaKno?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
+    * [Day 4](https://youtu.be/kwt0Ox-yTEE?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L)
 
 ## Nextflow training
 
