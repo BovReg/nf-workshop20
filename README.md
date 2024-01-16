@@ -26,7 +26,7 @@ Talks will be streamed on Zoom for registered participants and in [Youtube](http
 
     **Evan Floden** - Nextflow developer and CEO & Co-founder of [Seqera Labs](https://www.seqera.io/), Spain.
 
-    Watcht it [here](https://youtu.be/EjyMzdoCgjQ?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
+    Watch it [here](https://youtu.be/EjyMzdoCgjQ?list=PLVWPa8WxHNpQCPsBwMDxUfADe5QkFGF6L).
 
 * ### Introduction to nf-core
 
